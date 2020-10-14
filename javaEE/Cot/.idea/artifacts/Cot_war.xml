@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Cot:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Cot</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Cot-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Cot:war exploded" />
+    </root>
+  </artifact>
+</component>

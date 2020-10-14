@@ -1,0 +1,12 @@
+
+T
+java:S1128"9Remove this unused import 'cn.hutool.core.date.DateUtil'.(‹œ‰Áıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(”•¡óûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(–ë€
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‘ÎÙ¢
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ÈÖ×şşÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(¦šíˆşÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(“¬µ×
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(Ù‹¹
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(¡ºÅúÿÿÿÿ
+Q	java:S125+"<This block of commented-out lines of code should be removed.(­®õ¨
