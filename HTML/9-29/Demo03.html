@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+    <title>Document</title>
+</head>
+
+<body>
+	<input type="text" name="id1" id="id1" value="0" />
+	<input type="text" name="id1" id="id2" value="0" />
+	<br/>
+	<input type="button" name="" class="btn" value="+" />
+	<input type="button" name="" class="btn" value="-" />
+	<input type="button" name="" class="btn" value="*" />
+	<input type="button" name="" class="btn" value="/" />
+	<input type="text" name="deng" id="deng" value="" />
+</body>
+</html>
+<script type="text/javascript">
+$(function  () {
+	$(".btn").click(function() {
+		let id1=$("#id1").val();
+		let id2= $("#id2").val();
+		let str=$("#id1").val()+this.value+$("#id2").val();
+		$("#deng").val(eval(str));
+	})
+})
+</script>

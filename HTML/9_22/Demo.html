@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机抽取</title>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+        
+        div {
+            border: 15px solid transparent;
+            width: 870px;
+            padding: 143px 57px;
+            background-color: teal;
+        }
+        
+        #img {
+            -webkit-border-image: url(/logo/border.png) 30 30 round;
+            -o-border-image: url(/logo/border.png)30 30 round;
+            border-image: url(/logo/border.png) 30 30 round;
+        }
+        
+        #mm {
+            margin: auto;
+            width: 50%;
+            background-color: lightslategray;
+            border: 3px solid green;
+            padding: 10px;
+        }
+        
+        #div2 {
+            border: 4px solid transparent;
+            width: 441px;
+            padding: 54px 21px;
+            background-color: #ffffff;
+        }
+        
+        #pp {
+            tab-size: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="img">
+        <div id="div2">
+            <p id="pp"></p>
+        </div>
+        <button id="mm" onclick="but()">开始</button>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    var array = ['苍井空', '波多野结衣', '小川阿佐美', '大桥未久', '泷泽萝拉', '樱井莉亚', '铃原爱蜜莉', '上原瑞穗', '橘梨纱', '大桥未久'];
+    var s = true;
+    var b = window.document.querySelector("#mm")
+
+    function but() {
+        var interval = null;
+        if (s) {
+            s = false;
+            interval = setInterval(SM, 1000);
+            b.innerHTML = '暂停';
+        } else {
+            window.console.log('--------------------------')
+            clearInterval(interval);
+            b.innerHTML = '开始';
+            s = true;
+            break;
+        }
+    }
+
+    function SM() {
+        let count = array.length;
+        //生成随机数
+        let d = Math.random() * count;
+        let n = Math.floor(d);
+        window.console.log(array[n]);
+        window.document.getElementById('pp').innerHTML = array[n];
+    }
+</script>

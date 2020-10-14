@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<title>Document</title>
+	</head>
+
+	<body>
+		( <input type="checkbox" name="" id="btnAll" value="" />
+		<input type="checkbox" name="" class="btn" value="" />
+		<input type="checkbox" name="" class="btn" value="" />
+		<input type="checkbox" name="" class="btn" value="" />
+		<input type="checkbox" name="" class="btn" value="" />
+		<input type="checkbox" name="" class="btn" value="" /> )
+	</body>
+
+</html>
+<script type="text/javascript">
+	$(function() {
+		$("#btnAll").click(function() {
+			//true
+			console.log($(".btn:checked").length);
+			//fales
+			console.log($(".btn:not(checked)").length);
+
+			//循环遍历 数组或集合
+			$.each($(".btn"), function(i, v) {
+				v.checked = !v.checked
+			})
+		})
+
+	})
+</script>

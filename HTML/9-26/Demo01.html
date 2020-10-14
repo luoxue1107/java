@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>购物车</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div.tips {
+            float: left;
+            width: 750px;
+            height: 43px;
+            background-color: rgb(201, 216, 216);
+            margin: 0 auto;
+            border: rgb(8, 8, 8);
+        }
+        
+        div.info {
+            float: left;
+            width: 750px;
+            height: 43px;
+            background-color: #dddddd;
+            margin: 0 auto;
+            border: 1px solid rgb(8, 8, 8);
+        }
+        
+        .tips li {
+            list-style: none;
+            float: left;
+            width: 100px;
+        }
+        
+        .info li {
+            list-style: none;
+            float: left;
+            width: 100px;
+        }
+        
+        input[type="text"] {
+            width: 15px;
+            height: 10px;
+        }
+        
+        button {
+            width: 20px;
+            height: 20px;
+        }
+        
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--显示菜单的开始-->
+    <div class="tips">
+
+        <ul>
+            <li><input type="checkbox" /> 全选</li>
+            <li>商品</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>小计</li>
+            <li>操作</li>
+        </ul>
+    </div>
+    <!--显示菜单的结束-->
+
+    <!--商品详情展示开始-->
+    <div class="info">
+        <ul>
+            <li class="info_1"><input type="checkbox" /> </li>
+            <li class="info_2">笔记本1</li>
+            <li class="info_3">4000</li>
+            <li class="info_4">
+                <button class="bot1">-</button>
+                <input type="text" name="" id="inputText" value="1" />
+                <button class="bot">+</button>
+            </li>
+            <li class="info_5">4000</li>
+            <li>
+
+                <input type="button" value="删除">
+
+            </li>
+        </ul>
+    </div>
+    <div class="info">
+
+        <ul>
+            <li class="info_1"><input type="checkbox" /> </li>
+            <li class="info_2">笔记本2</li>
+            <li class="info_3">50000</li>
+            <li class="info_4">
+                <button class="bot1">-</button>
+                <input type="text" name="" id="inputText" value="1" />
+                <button class="bot">+</button>
+            </li>
+            <li class="info_5">50000</li>
+            <li>
+
+                <input type="button" value="删除">
+
+            </li>
+        </ul>
+    </div>
+    <div class="info">
+
+        <ul>
+            <li class="info_1"><input type="checkbox" /> </li>
+            <li class="info_2">笔记本3</li>
+            <li class="info_3">6000</li>
+            <li class="info_4">
+                <button class="bot1">-</button>
+                <input type="text" name="" id="inputText" value="1" />
+                <button class="bot">+</button>
+            </li>
+            <li class="info_5">6000</li>
+            <li>
+
+                <input type="button" value="删除">
+
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--商品详情展示结束-->
+</body>
+
+</html>
+<script>
+    let checkboxs = window.document.querySelectorAll('.info input[type="checkbox"]');
+    let checkbox = window.document.querySelector('.tips input[type="checkbox"]');
+    let button = window.document.querySelector('.info input[type="button"]');
+    let text = window.document.querySelector('.info input[type="text"]');
+    let bot1 = window.document.querySelector('.bot1');
+    let bot = window.document.querySelector('.bot');
+
+
+
+    checkbox.onclick = function() {
+        if (checkbox.checked) {
+            text.value = '2';
+            din1();
+        } else
+            din2();
+    }
+
+    function din1() {
+        for (let index = 0; index < checkboxs.length; index++) {
+            const element = checkboxs[index];
+            window.console.log(element.checked);
+            element.checked = true;
+
+        }
+    }
+
+    function din2() {
+        for (let index = 0; index < checkboxs.length; index++) {
+            const element = checkboxs[index];
+            window.console.log(element.checked);
+            element.checked = false;
+        }
+    }
+
+    //删除
+    button.onclick = function dinButton() {
+				let dels=document.querySelectorAll("#del");
+			
+				for(i=0;i<dels.length;i++)
+				{
+					if(obj==dels[i]){
+						m.deleteRow(i+1);
+					}
+				}
+        }
+        //加
+    bot.onclick = function() {
+
+            text.value = text.value + 2;
+
+
+        }
+        //减
+    bot1.onclick = function() {
+
+
+
+    }
+</script>

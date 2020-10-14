@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+<script>
+    let array = ['1', 'xiao', '0s', 'la', ]
+    for (let index = 0; index < array.length; index++) {
+
+        const element = array[index];
+
+        window.console.log(element + ' ' + typeof element);
+    }
+    window.console.log('我是一个华丽的分割线');
+    array.forEach(element => {
+        window.console.log(element + ' ' + typeof element);
+    });
+    window.console.log('我是一个华丽的分割线');
+    for (const element of array) {
+        window.console.log(element + ' ' + typeof element);
+    }
+    window.console.log('我是一个华丽的分割线');
+    for (const iterator in array) {
+        window.console.log(iterator + ' ' + typeof iterator);
+    }
+</script>

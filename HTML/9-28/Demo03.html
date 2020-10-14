@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="account" value="aaa" />
+		<input type="button" id="account2" value="bbb" />
+		
+	</body>
+</html>
+<script type="text/javascript">
+	var aaa =document.querySelector("#account")
+	 var bbb=document.querySelector("#account2")
+	bbb.addEventListener("click",alert("点击"));
+
+	function ccc(){
+		alert("点击事件")
+	}
+		aaa.addEventListener("click",alert("时间"));
+	
+</script>

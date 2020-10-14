@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快猫</title>
+    </title>
+</head>
+
+<body>
+    <p id="mm">MM<button onclick="SM()">点我</button></p>
+</body>
+
+</html>
+<script>
+    function SM() {
+
+        let array = ['苍井空', '波多野结衣', '小川阿佐美', '大桥未久', '泷泽萝拉', '樱井莉亚', '铃原爱蜜莉', '上原瑞穗', '橘梨纱', '大桥未久'];
+        let count = array.length;
+
+        for (let i = 0; i < 3; i++) {
+            //生成随机数
+            let d = Math.random() * count;
+            let n = Math.floor(d);
+            window.console.log(array[n]);
+            //删除随机数指向的数组元素
+            array.splice(n, 1);
+            count--;
+            document.getElementById('mm').innerHTML = array[n];
+        }
+
+
+    }
+</script>

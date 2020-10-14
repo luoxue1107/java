@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: darkgoldenrod;
+        }
+        
+        li {
+            color: floralwhite;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>李白</li>
+        <li>苏轼</li>
+        <li>杜甫</li>
+        <li>陶渊明</li>
+        <li>白居易</li>
+    </ul>
+</body>
+
+</html>
+<script>
+    let liArray = window.document.getElementsByTagName('li');
+    for (let index = 0; index < liArray.length; index++) {
+        const element = liArray[index];
+
+
+        window.console.log(element.innerText);
+    }
+</script>

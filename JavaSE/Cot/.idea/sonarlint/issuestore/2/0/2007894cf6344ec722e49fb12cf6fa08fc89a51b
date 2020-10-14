@@ -1,0 +1,21 @@
+
+U
+java:S1161b":Add the "@Override" annotation above this method signature(ž†§þýÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ý°‹žÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á¡õ
+K
+java:S1948u"0Make "offScreenImage" transient or serializable.(²àÒÊøÿÿÿÿ
+P
+java:S1161w":Add the "@Override" annotation above this method signature(æìÑº
+P
+java:S1161>":Add the "@Override" annotation above this method signature(“–ýþ
+?
+java:S1948"$Make "bg" transient or serializable.(·ÂÝìÿÿÿÿÿ
+Q	java:S125j"<This block of commented-out lines of code should be removed.(ƒÆ
+\
+java:S2142C"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+;
+java:S1948"%Make "bg2" transient or serializable.(¨çû„
+P
+java:S1161":Add the "@Override" annotation above this method signature(ÞÔæ¨

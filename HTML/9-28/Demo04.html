@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   <style type="text/css">
+   	*{
+   		margin: 0;
+   		padding: 0;
+   	}
+   	#out{
+   		background-color: #abcd;
+   		width: 200px;
+   		height: 200px;
+   	}
+   	#inner{
+   		margin:  0 auto;
+   		position: relative;
+   	top: 35px;
+   		background-color: #FF00FF;
+   		width: 100px;
+   		height: 100px;
+   	}
+   </style>
+</head>
+
+<body>
+<div id="out">
+	out
+	<div id="inner">
+	inner
+</div>
+
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	document.querySelector("#out").addEventListener("click",acc2)
+	document.querySelector("#inner").addEventListener("click",acc)
+	function acc(e){
+		console.log(e.target)
+	}
+	function acc2 (e) {
+		console.log(this)
+	}
+</script>

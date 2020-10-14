@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>de</title>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+	<form action="" method="post">
+		
+		<input type="text" value="admin" id="text"/>
+		<input type="button" name="" id="btn" value="an" />
+		
+		<input type="checkbox" name="" id="btnAll" value="" />
+		<input type="checkbox" name="" class="btnA" value="" />
+		<input type="checkbox" name="" class="btnA" value="" />
+		<input type="checkbox" name="" class="btnA" value="" />
+	</form>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$("#btn").click(function() {
+		alert($("#text").val()) 	
+			})
+		$("#btnAll").click(function(){
+				alert(	$(".btnA").length)
+				$(".btnA").attr("checked",this.checked)
+		})
+	})
+</script>

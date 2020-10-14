@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+    
+    table {
+        margin: 0 auto;
+    }
+    
+    body {
+        font-size: larger;
+        color: #000;
+        background-color: #fff;
+    }
+</style>
+
+<body>
+    <h1>购物车</h1>
+    <table border="1">
+        <tr>
+            <th>商品名称</th>
+            <th>商品单价</th>
+
+            <th>商品库存</th>
+            <th>商品评价</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>键盘</td>
+            <td>155</td>
+
+            <td>100</td>
+            <td>86%</td>
+            <td align="center">
+                <input type="button" value="加入购物车" onclick="add_shoppingcar(this)" />
+            </td>
+        </tr>
+        <tr>
+            <td>硬盘</td>
+            <td>368</td>
+
+            <td>200</td>
+            <td>82%</td>
+            <td align="center">
+                <input type="button" value="加入购物车" onclick="add_shoppingcar(this)" />
+            </td>
+        </tr>
+        <tr>
+            <td>鼠标</td>
+            <td>127</td>
+
+            <td>99</td>
+            <td>64%</td>
+            <td align="center">
+                <input type="button" value="加入购物车" onclick="add_shoppingcar(this)" />
+            </td>
+        </tr>
+        <tr>
+            <td>散热器</td>
+            <td>127</td>
+
+            <td>50</td>
+            <td>80%</td>
+            <td align="center">
+                <input type="button" value="加入购物车" onclick="add_shoppingcar(this)" />
+            </td>
+        </tr>
+
+    </table>
+    <h1>结算</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>商品名称</th>
+                <th>商品单价</th>
+                <th>商品数量</th>
+                <th>商品金额</th>
+                <th>删除</th>
+            </tr>
+        </thead>
+        <tbody id="goods">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">总计</td>
+                <td id="total"></td>
+                <td>元</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
+<script>
+    function add_shoppingcar(btn) {
+        let tr = btn.parentNode.parentNode;
+        let tds = tr.getElementsByTagName("td");
+        let name = tds[0].innerHTML;
+        let price = tds[1].innerHTML;
+        let tbody = document.getElementById("goods");
+        let row = tbody.insertRow();
+
+        row.innerHTML = "<td>" + name + "</td>" +
+            "<td>" + price + "</td>" +
+            "<td align='center'>" +
+            "<input type='button' value='-' id='jian' onclick='change(this,-1)' />" +
+            "<input type='text' id='text' size='1' value='1' readonly='readonly' />" +
+            "<input type='button' value='+' id='jian' onclick='change(this,1)' />" +
+            "</td>" +
+            "<td>" + price + "</td>" +
+            "<td align='center'>" +
+            "<input type='button' value='删除' onclick='del(this)' />" +
+            "</td>" +
+            "</tr>"
+        total();
+    }
+
+    function change(btn, n) {
+
+        let inputs = btn.parentNode.getElementsByTagName("input");
+
+        let amount = parseInt(inputs[1].value);
+
+
+        if (amount <= 1 && n < 0) {
+            return;
+        }
+
+        inputs[1].value = amount + n;
+
+        amount = inputs[1].value;
+
+        let tr = btn.parentNode.parentNode;
+
+        let tds = tr.getElementsByTagName("td");
+
+        let price = parseFloat(tds[1].innerHTML);
+
+        let m = price * amount;
+
+        tds[3].innerHTML = m;
+
+        total();
+    }
+
+    function total() {
+        let tbody = document.getElementById("goods");
+        let trs = tbody.getElementsByTagName("tr");
+        let sum = 0;
+        for (let i = 0; i < trs.length; i++) {
+            let tds = trs[i].getElementsByTagName("td");
+            let m = tds[3].innerHTML;
+            sum += parseFloat(m);
+        }
+        let total = document.getElementById("total");
+        total.innerHTML = sum;
+    }
+
+    function del(i) {
+        let tr = i.parentNode.parentNode;
+        tr.parentNode.removeChild(tr);
+        total();
+    }
+</script>

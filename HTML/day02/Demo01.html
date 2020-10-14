@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+
+<body>
+
+    <!-- action 服务器接送该表单数据的URL
+    method 请求服务器的方式 常见的get和post
+
+    -->
+    <form action="#" method="get">
+
+        <!-- 
+            input   表单标签
+            type    表单类型
+            name    向服务器发送数据 后端服务器接收数据的key
+            value   向服务器发送数据 后端服务器接收数据的根据name这个key对应值
+            id      页面内使用
+      
+        -->
+        账号<input type="text" name="account" value="" id="accout" autocomplete="off" placeholder="请输入手机号">
+        <br><br>
+        <!--type 里填password 可以进行输入框 里的数值隐藏  -->
+        密码<input type="password" name="password" value="" id="accout" autocomplete="off" placeholder="请输入密码">
+
+
+
+
+
+    </form>
+</body>
+
+</html>

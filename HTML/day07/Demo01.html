@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="mm">MM</button> <button id="ss">SS</button>
+    <br>
+    <img id="img" src="/logo/1 (30).jpg" alt="mm" width="300px">
+</body>
+
+</html>
+<script>
+    let mm = window.document.querySelector('#mm');
+    let ss = window.document.querySelector('#ss');
+    let img = window.document.querySelector('#img');
+
+    mm.onmouseover = function() {
+        img.src = "/logo/1 (31).jpg"
+    }
+    ss.onmouseover = function() {
+        img.src = "/logo/1 (32).jpg"
+    }
+</script>

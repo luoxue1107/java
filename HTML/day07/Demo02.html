@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码的显示效果</title>
+</head>
+
+<body>
+    <div>
+        密码<input type="password" name="pwd" id="pwd">
+        <img id="img" src="/logo/xx/壁纸 (3).jpg" alt="1213" height="90px">
+    </div>
+</body>
+
+</html>
+<script>
+    let img = window.document.querySelector('#img');
+    let pwd = window.document.querySelector('#pwd');
+    img.onclick = function() {
+        let password = pwd.type
+        switch (password) {
+            case 'text':
+                pwd.type = 'password'
+                break;
+            case 'password':
+                pwd.type = 'text'
+                break;
+
+            default:
+                break;
+        }
+
+
+
+
+    }
+</script>

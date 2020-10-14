@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>快猫</title>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		#img{
+			width: 150px;
+			height: 200px;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="">
+		<img id="img" src="../img/xx/0.png"alt="壁纸">	
+		<input type="button" name="btn" id="btn" value="an" />
+		</div>	
+	</body>
+</html>
+<script type="text/javascript">
+	$("#btn").click(function(){
+	
+	console.log($("#img").attr("src"))
+			$("#img").attr("src","../img/xx/"+ Math.floor(Math.random()*44) +".png");
+		
+	});
+	
+</script>

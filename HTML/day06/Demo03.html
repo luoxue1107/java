@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>触发事件</title>
+
+    <style>
+        * {
+            background-color: goldenrod;
+        }
+        
+        .mm {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="mm">摸我</button>
+</body>
+
+</html>
+<script>
+    let mm = window.document.querySelector('.mm')
+    mm.onclick = function() {
+        window.console.log('你好骚噢。。')
+
+    }
+</script>

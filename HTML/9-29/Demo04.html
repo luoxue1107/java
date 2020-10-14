@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<title>Document</title>
+		<style type="text/css">
+			* {
+				margin: 0 ;
+				padding: 0;
+			}
+			
+			.tr {
+				display: none;
+				font: "宋体";
+			}
+			
+			url {
+				width: 300px;
+				height: 700px;
+			}
+			
+			#div {
+				width: 509px;
+				height: 8000px;
+				border: 1px #000 solid;
+				background-image: url(../img/xx/48.png);
+				position: ;
+				background-size: 509px 800px;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-origin: padding-box ;
+				padding: 0;
+			}
+			
+			#btn1,
+			#btn2,
+			#btn3,
+			#btn4 {
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<div id="div" style="background-image: url(../img/xx/48.png) ;">
+		<table border="" cellspacing="" cellpadding="">
+			<tr style="background-color: royalblue">
+				<th id="btn1" style=" width: 500px;">长恨歌</th>
+			</tr>
+			<tr class="tr" id="tr1" style="background-color: burlywood;">
+				<th>
+					<p style="font-size: 13px;">唐代：白居易</p>
+					<p>汉皇重色思倾国，御宇多年求不得。</p>
+					<p>杨家有女初长成，养在深闺人未识。</p>
+					<p>天生丽质难自弃，一朝选在君王侧。</p>
+					<p>回眸一笑百媚生，六宫粉黛无颜色。</p>
+					<p>春寒赐浴华清池，温泉水滑洗凝脂。</p>
+					<p>侍儿扶起娇无力，始是新承恩泽时。</p>
+					<p>云鬓花颜金步摇，芙蓉帐暖度春宵。</p>
+					<p>春宵苦短日高起，从此君王不早朝。</p>
+					<p>承欢侍宴无闲暇，春从春游夜专夜。</p>
+					<p>后宫佳丽三千人，三千宠爱在一身。</p>
+					<p>金屋妆成娇侍夜，玉楼宴罢醉和春。</p>
+					<p>姊妹弟兄皆列土，可怜光彩生门户。</p>
+					<p>遂令天下父母心，不重生男重生女。</p>
+					<p>骊宫高处入青云，仙乐风飘处处闻。</p>
+					<p>缓歌慢舞凝丝竹，尽日君王看不足。</p>
+				</th>
+			</tr>
+
+			<tr style="background-color: greenyellow">
+				<th id="btn2">关雎</th>
+			</tr>
+			<tr class="tr" id="tr2" style="background-color: burlywood;">
+				<th>
+					<p style="font-size: 13px;">先秦：佚名</p>
+					<p>关关雎鸠，在河之洲。</p>
+					<p>窈窕淑女，君子好逑。</p>
+					<p>窈窕淑女，寤寐求之。</p>
+					<p>参差荇菜，左右流之。</p>
+					<p>求之不得，寤寐思服。</p>
+					<p>悠哉悠哉，辗转反侧。</p>
+					<p>参差荇菜，左右采之。</p>
+					<p>窈窕淑女，琴瑟友之。</p>
+					<p>参差荇菜，左右芼之。</p>
+					<p>窈窕淑女，钟鼓乐之。</p>
+				</th>
+			</tr>
+
+			<tr style="background-color: teal">
+				<th id="btn3">七夕</th>
+			</tr>
+			<tr class="tr" id="tr3" style="background-color: burlywood;">
+				<th>
+					<p style="font-size: 13px;">唐代：李商隐</p>
+					<p>鸾扇斜分凤幄开，星桥横过鹊飞回。</p>
+					<p>争将世上无期别，换得年年一度来。</p>
+				</th>
+			</tr>
+
+			<tr style="background-color: yellow">
+				<th id="btn4">水调歌头·明月几时有</th>
+			</tr>
+			<tr class="tr" id="tr4" style="background-color: burlywood;">
+				<th>
+					<p style="font-size: 13px;">宋代：苏轼</p>
+					<p>丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。</p>
+					<p>明月几时有？把酒问青天。</p>
+						<p>不知天上宫阙，今夕是何年。</p>
+						<p>我欲乘风归去，又恐琼楼玉宇，高处不胜寒。</p>
+						<p>起舞弄清影，何似在人间。</p>
+						<p>转朱阁，低绮户，照无眠。</p>
+						<p>不应有恨，何事长向别时圆？</p>
+						<p>人有悲欢离合，月有阴晴圆缺，此事古难全。</p>
+						<p>但愿人长久，千里共婵娟。</p>
+				</th>
+			</tr>
+		</table>
+	</div>
+
+	<body>
+
+	</body>
+
+</html>
+<script type="text/javascript">
+	$(function() {
+		$("#btn1").mouseenter(function() {
+			$("#tr1").fadeIn(500);
+		})
+		$("#btn1").mouseleave(function() {
+			$("#tr1").fadeOut(500);
+		})
+
+		$("#btn2").mouseenter(function() {
+			$("#tr2").fadeIn(500);
+		})
+		$("#btn2").mouseleave(function() {
+			$("#tr2").fadeOut(500);
+		})
+
+		$("#btn3").mouseenter(function() {
+			$("#tr3").fadeIn(500);
+		})
+		$("#btn3").mouseleave(function() {
+			$("#tr3").fadeOut(500);
+		})
+
+		$("#btn4").mouseenter(function() {
+			$("#tr4").fadeIn(500);
+		})
+		$("#btn4").mouseleave(function() {
+			$("#tr4").fadeOut(500);
+		})
+	})
+</script>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width:400px;
+            
+            border:1px solid #999;
+            position:absolute;
+            left:50%;
+            top:50%;
+            text-align: center;
+            padding:20px;
+            /*margin-left:-200px;
+            margin-top:-150px;*/
+            -webkit-transform:translate(-50%, -50%);
+            -moz-transform:translate(-50%, -50%);
+            -ms-transform:translate(-50%, -50%);
+            -o-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            
+        }
+
+        .content{
+            border:1px solid #999;
+            padding:20px;
+            font-size:30px;
+        }
+        .box button{
+            font-family: "Microsoft YaHei";
+            font-size:20px;
+            margin-top:10px;
+            width:100%;
+            border:1px solid #999;
+            cursor:pointer;
+            line-height: 40px;
+            outline:none;
+        }
+
+        .custom{
+            padding:20px;
+            border:1px solid green;
+            border-radius: 5px;
+            margin-top:10px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content" id="content">随机点名器</div>
+        <button onclick="gotoRand()" id="btn">开 始</button>
+
+        <div class="custom" id="custom">
+            
+        </div>
+    </div>
+
+    <script>
+
+        //声明 所有的人名 组成的数组
+        var nameList = ["李乔康","隋士新","洪伟","薛哲煜","李飞","芮鹏程","时尚",
+            "谢镛","鄂乾帆","牟荣浩","高天翊","郝雷蒙","韩宇","王浩东",
+             "韩文鑫","葛晨旭","陈启泽","姜峰","王恒","张行（大）","孙雷聪",
+              "张于辉","王德鑫","许京东","孙肖石","王磊","李庆华","孙宇",
+               "陈金平","李少伟","常兆雄","关瑞明","关玉伟","杨玺召","高轩",
+                "王晨松","闫鑫平","鲍国强","张行（小）","刘原野"];
+
+        //声明时间的变量
+        var timer = null;
+
+        //定义全局变量
+        var index = null;
+
+        //开始 随机的函数
+        function gotoRand(){
+            //获取button 元素
+            var button = document.getElementById('btn');
+
+            //判断 是开始还是结束
+            if (timer === null) {
+                //开启定时
+                timer = setInterval(getName, 100);
+                //把button的内容改掉
+                button.innerHTML = "暂 停";
+            } else {
+                //清除定时
+                clearInterval(timer);
+                //修改button的内容
+                button.innerHTML = "开 始";
+                //把timer赋值为null
+                timer = null;
+
+                if (nameList.length > 0) {
+                    //取出数据 放在constom里
+                    document.getElementById('custom').innerHTML += nameList[index]+'<br>';
+                    //把取过数据删掉
+                    nameList.splice(index, 1);
+                }
+            }
+
+            
+        }
+
+
+        //随机获取姓名函数
+        function getName(){
+            //判断
+            if (nameList.length <= 0) {
+                document.getElementById('content').innerHTML = "没了,别取了";
+                return;
+            }
+
+            //取随机数
+            index = Math.floor(Math.random() * 10000000 % nameList.length);
+            //取出姓名放入 div中
+            document.getElementById('content').innerHTML = nameList[index];
+        }
+
+
+    </script>
+
+    
+
+</body>
+</html>

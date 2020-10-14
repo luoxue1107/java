@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/jquery-3.4.1.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <input type="button" value="隐藏">
+    <br>
+    <img src="/img/xx/0.png" alt="" style="width: 500px; height: 800px;">
+</body>
+
+</html>
+<script>
+    $(function() {
+        $("input").click(function(e) {
+            // $("img").css("display", "none")
+            // $("img").attr(left)
+            // $("img").attr(opacity)
+            // $("img").attr(height)
+            // $("img").attr(width)
+            window.alert($("img").attr('left'))
+            window.alert($("img").attr('opacity'))
+            window.alert($("img").attr('height'))
+            window.alert($("img").attr('width'))
+
+            $("img").animate({
+                left: '250px',
+                opacity: '0.1',
+                height: '1000px',
+                width: '800px'
+            });
+
+
+            let i = $(this).val();
+            let conut = "显示";
+            let count2 = "隐藏";
+            if (i != conut) {
+                $(this).val(conut)
+            } else {
+                $(this).val(count2)
+            }
+
+
+        })
+    });
+</script>

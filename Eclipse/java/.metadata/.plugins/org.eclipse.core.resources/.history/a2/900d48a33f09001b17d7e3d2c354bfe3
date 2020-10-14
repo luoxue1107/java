@@ -1,0 +1,11 @@
+package cn.kgc.tangcco.bean;
+
+import lombok.Getter;
+
+@Getter
+public class Demo01 {
+  int ins;
+  String str;
+  
+ 
+}

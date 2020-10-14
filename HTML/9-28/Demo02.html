@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>de</title>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		.div1{
+			background: yellowgreen;
+			height: 200px;
+			width: 500px;
+			
+		}
+		.div2{
+			background: fuchsia;
+			height: 100px;
+			width: 100px;
+			
+		}
+	</style>
+	</head>
+	<body>
+		<div class="div1 " id="div"></div>
+		<input type="button" id="divBtn" value="an" />
+		
+	</body>
+</html>
+<script type="text/javascript">
+	
+	$(function(){
+		$("#divBtn").click(function(){
+			alert($("#div").addClass())
+			$("#div").addClass("div2");
+	
+		});
+		
+		
+	});
+</script>

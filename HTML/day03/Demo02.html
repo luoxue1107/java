@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>这是我的第一个网页</title>
+
+    <script>
+        function  refresh() {      
+            baiurl  =  location.href;     
+            console.log(url);    
+            var  once  =  url.split("#");     
+            if  (once[1]  !=  1)  {         
+                duurl  +=  "#1";         
+                self.location.replace(url);         
+                window.location.reload();     
+            }
+        } 
+        setTimeout('refresh()',  5);
+    </script>
+</head>
+
+<body>
+
+    <meta http-equiv="refresh" content="1 ; URL= https://www.baidu.com/">
+</body>
+
+</html>
