@@ -1,0 +1,19 @@
+
+R
+java:S1610
+"<Convert the abstract class "BaseFiltUtil" into an interface.(­©È“
+P
+java:S1118
+":Add a private constructor to hide the implicit public one.(­©È“
+d
+java:S4042"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(È×ö
+P	java:S899";Do something with the "boolean" value returned by "delete".(È×ö
+d
+java:S4042"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(È×ö
+P	java:S899";Do something with the "boolean" value returned by "delete".(È×ö
+i
+java:S4042 "NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
+U	java:S899 ";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(ê…ìæ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(äŞæÆÿÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ãüÙ¹ıÿÿÿÿ

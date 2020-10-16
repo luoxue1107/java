@@ -1,0 +1,23 @@
+
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(˜ÜœÇ8‡ş•Ó.
+Q
+java:S1172"/Remove this unused method parameter "response".(§Óİûÿÿÿÿ8¨ñ†Ó.
+L
+java:S1172"/Remove this unused method parameter "response".(¾®¶¯8à³˜ÿÒ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(È´Ë¶8‘¼Ş€Ó.
+Q
+java:S1172#"/Remove this unused method parameter "response".(â¨·øøÿÿÿÿ8‡ş•Ó.
+e
+java:S1192"HDefine a constant instead of duplicating this literal "mobile=" 4 times.(È´Ë¶8ƒÍ†Ó.
+c
+java:S1192"GDefine a constant instead of duplicating this literal "mobile" 4 times.(ÔäÅ08ƒÍ†Ó.
+Q
+java:S1172"/Remove this unused method parameter "response".(èşÏ•ÿÿÿÿÿ8‘¼Ş€Ó.
+„
+java:S4144"bUpdate this method so that its implementation is not identical to "loginWithFormByGet" on line 18.(èşÏ•ÿÿÿÿÿ8í€ß€Ó.
+„
+java:S4144"bUpdate this method so that its implementation is not identical to "loginWithFormByGet" on line 18.(§Óİûÿÿÿÿ8¨ñ†Ó.
+f
+java:S1192"IDefine a constant instead of duplicating this literal "password" 6 times.(ÀÜÜü8‘¼Ş€Ó.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(È´Ë¶8¨ñ†Ó.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(È´Ë¶8÷˜ÿÒ.

@@ -1,0 +1,17 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(àôÌ8×àÍ®Ò.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(­˜‡“8à‰Ö®Ò.
+h
+java:S1192"KDefine a constant instead of duplicating this literal "User-Agent" 3 times.(¯Òù‡8Ã•Ì¯Ò.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ôŠÿğúÿÿÿÿ8“§Ï®Ò.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¯Òù‡8˜î´®Ò.
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(¹‘®øşÿÿÿÿ8à‰Ö®Ò.
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(Àé½şÿÿÿÿ8«¸‹¯Ò.
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ8éÃ«¯Ò.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÿİüéùÿÿÿÿ8“§Ï®Ò.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¨’€Üúÿÿÿÿ8­˜Ñ®Ò.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Üµ˜8€§Ò®Ò.
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(Åá—•şÿÿÿÿ8—¡¯Ò.
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(Ö©‹8€»¯Ò.
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(äı³ÿûÿÿÿÿ8ü¯¾¯Ò.
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(³ª¢óúÿÿÿÿ8¥ŠŒ¯Ò.

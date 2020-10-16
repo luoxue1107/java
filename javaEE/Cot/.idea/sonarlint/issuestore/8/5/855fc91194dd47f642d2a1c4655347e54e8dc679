@@ -1,0 +1,13 @@
+
+2
+java:S1700"Rename field "persons"(æÙ¢8å¦â²Ò.
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(’’ÄÕùÿÿÿÿ8×†µÒ.
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(Íˆ ‚ÿÿÿÿÿ8øÔßµÒ.
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(”½Ùûÿÿÿÿ8ŞÅàµÒ.
+X
+java:S1128";Remove this unused import 'javax.servlet.ServletException'.(Š‰™Œ8°¾ş²Ò.
+X
+java:S1128"6Remove this unused import 'cn.hutool.json.JSONObject'.(¨ôÛˆùÿÿÿÿ8±ÏÓµÒ.
+]	java:S125 "<This block of commented-out lines of code should be removed.(³ºîæşÿÿÿÿ8ñ–ó²Ò.
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æÙ¢8­ˆ¨²Ò.
