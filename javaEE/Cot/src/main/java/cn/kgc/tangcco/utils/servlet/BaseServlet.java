@@ -1,10 +1,7 @@
 package cn.kgc.tangcco.utils.servlet;
 
 
-import cn.hutool.http.server.HttpServerResponse;
 import com.alibaba.fastjson.JSON;
-import org.apache.commons.io.IOUtils;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -83,8 +80,6 @@ public class BaseServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         System.out.println("请求方式:" + request.getMethod());
 
-
-
         String methodName = request.getParameter("methodName");
         Class<? extends BaseServlet> clazz = this.getClass();
         try {
@@ -99,12 +94,12 @@ public class BaseServlet extends HttpServlet {
     /**
      * 向页面响应字符串
      * @param response  HttpServletResponse
-     * @param Text  向页面响应的字符串
+     * @param object  向页面响应的所有对象
      * @throws IOException  IOException
      */
-    public static void printText(HttpServletResponse response ,String Text) throws IOException {
+    public static void printText(HttpServletResponse response , Object object) throws IOException {
         PrintWriter writer = response.getWriter();
-        writer.print(Text);
+        writer.print(object);
         writer.flush();
         writer.close();
     }

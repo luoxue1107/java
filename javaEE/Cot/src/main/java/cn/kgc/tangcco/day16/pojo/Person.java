@@ -21,7 +21,7 @@ public class Person {
     /**
      * 曾用名
      */
-    private String fisrName;
+    private String formerName;
     /**
      * 现用名
      */
@@ -51,12 +51,12 @@ public class Person {
         this.idCard = idCard;
     }
 
-    public String getFisrName() {
-        return fisrName;
+    public String getFormerName() {
+        return formerName;
     }
 
-    public void setFisrName(String fisrName) {
-        this.fisrName = fisrName;
+    public void setFormerName(String formerName) {
+        this.formerName = formerName;
     }
 
     public String getLastName() {
@@ -71,7 +71,7 @@ public class Person {
         this.id = id;
         this.uuid = uuid;
         this.idCard = idCard;
-        this.fisrName = fisrName;
+        this.formerName = fisrName;
         this.lastName = lastName;
     }
 
