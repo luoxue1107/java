@@ -1,5 +1,25 @@
 
-B
-java:S3011N",This accessibility update should be removed.(Ó«§¯
+{
+java:S1989?"^Handle the following exception that could be thrown by "excute": UnsupportedEncodingException.(–§Èï8£üŸ„Ó.
+{
+java:S19895"^Handle the following exception that could be thrown by "excute": UnsupportedEncodingException.(–§Èï8£üŸ„Ó.
+I
+java:S3011\",This accessibility update should be removed.(«Æªš8‰Ï€Ó.
+m	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ßÖå8÷“ìàÒ.
+W
+java:S1128":Remove this unused import 'org.apache.commons.io.IOUtils'.(Ì–’8õê¿€Ó.
+{
+java:S1989:"^Handle the following exception that could be thrown by "excute": UnsupportedEncodingException.(–§Èï8£üŸ„Ó.
+Z	java:S106T"9Replace this use of System.out or System.err by a logger.(§§Ş“ùÿÿÿÿ8÷“ìàÒ.
 C
-java:S1185"(Remove this method to simply inherit it.(ê˜ûÿÿÿÿ
+java:S1185 "(Remove this method to simply inherit it.(ê˜ûÿÿÿÿ
+g
+java:S1128"ERemove this unused import 'cn.hutool.http.server.HttpServerResponse'.(¥ëñáûÿÿÿÿ8÷“ìàÒ.
+{
+java:S1989&"^Handle the following exception that could be thrown by "excute": UnsupportedEncodingException.(–§Èï8£üŸ„Ó.
+{
+java:S1989+"^Handle the following exception that could be thrown by "excute": UnsupportedEncodingException.(–§Èï8£üŸ„Ó.
+{
+java:S1989"^Handle the following exception that could be thrown by "excute": UnsupportedEncodingException.(–§Èï8£üŸ„Ó.
+{
+java:S19890"^Handle the following exception that could be thrown by "excute": UnsupportedEncodingException.(–§Èï8£üŸ„Ó.

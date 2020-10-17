@@ -1,13 +1,15 @@
 
 @
-java:S5786"Remove this 'public' modifier.(¥„¯éüÿÿÿÿ8ôñÉ¸Ò.
-¨
-java:S3577"…Rename class "Demo01" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(Æÿãšûÿÿÿÿ8 ÚÉ¸Ò.
-;
-java:S57860"Remove this 'public' modifier.(×·Şƒ8èÍ¸Ò.
-O
-java:S2699"-Add at least one assertion to this test case.(¥„¯éüÿÿÿÿ8ôñÉ¸Ò.
+java:S5786;"Remove this 'public' modifier.(©¶‹Êùÿÿÿÿ8ş…ŠÍÒ.
 @
 java:S5786"Remove this 'public' modifier.(Æÿãšûÿÿÿÿ8 ÚÉ¸Ò.
+;
+java:S57862"Remove this 'public' modifier.(×·Şƒ8èÍ¸Ò.
+@
+java:S5786"Remove this 'public' modifier.(¥„¯éüÿÿÿÿ8ôñÉ¸Ò.
+O
+java:S2699"-Add at least one assertion to this test case.(¥„¯éüÿÿÿÿ8ôñÉ¸Ò.
 J
-java:S26990"-Add at least one assertion to this test case.(×·Şƒ8èÍ¸Ò.
+java:S26992"-Add at least one assertion to this test case.(×·Şƒ8èÍ¸Ò.
+¨
+java:S3577"…Rename class "Demo01" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(Æÿãšûÿÿÿÿ8 ÚÉ¸Ò.

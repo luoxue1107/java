@@ -1,7 +1,9 @@
 package cn.kgc.tangcco.utils.servlet;
 
 
+import cn.hutool.http.server.HttpServerResponse;
 import com.alibaba.fastjson.JSON;
+import org.apache.commons.io.IOUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,11 +11,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
- * @author 李庆华
+ * @author 李昊哲
  * @Description
  * @create 2020/10/13 下午3:49
  */
@@ -70,22 +73,50 @@ public class BaseServlet extends HttpServlet {
      * @param request HttpServletRequest
      * @param response HttpServletResponse
      */
-    public void excute(HttpServletRequest request, HttpServletResponse response) {
+    public void excute(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException{
+        // 处理中文乱码
+        // 处理post请求的中文乱码
+        request.setCharacterEncoding("utf-8");
+        // 处理响应的字符集中文乱码
+        response.setCharacterEncoding("utf-8");
+        // 处理浏览器字符集中文乱码
+        response.setContentType("text/html;charset=utf-8");
+        System.out.println("请求方式:" + request.getMethod());
+
+
+
         String methodName = request.getParameter("methodName");
         Class<? extends BaseServlet> clazz = this.getClass();
         try {
-            Method method = clazz.getDeclaredMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
-            method.setAccessible(true);
-            method.invoke(this,request,response);
+            Method declaredMethod = clazz.getDeclaredMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
+            declaredMethod.setAccessible(true);
+            declaredMethod.invoke(this, request, response);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
     }
-    public void printObject(HttpServletResponse response,Object obj) throws IOException {
+
+    /**
+     * 向页面响应字符串
+     * @param response  HttpServletResponse
+     * @param Text  向页面响应的字符串
+     * @throws IOException  IOException
+     */
+    public static void printText(HttpServletResponse response ,String Text) throws IOException {
         PrintWriter writer = response.getWriter();
-        //把对象解析为字符串
-        String string = JSON.toJSONString(obj);
-        writer.println(string);
+        writer.print(Text);
+        writer.flush();
+        writer.close();
+    }
+    /**
+     * 向页面响应json字符串
+     * @param response  HttpServletResponse
+     * @param object  向页面响应的对象
+     * @throws IOException  IOException
+     */
+    public static void printJsonObject(HttpServletResponse response ,Object object) throws IOException {
+        PrintWriter writer = response.getWriter();
+        writer.print(JSON.toJSONString(object));
         writer.flush();
         writer.close();
     }

@@ -1,4 +1,4 @@
-package cn.kgc.tangcco.day16.contrtoller.http;
+package cn.kgc.tangcco.day16.http;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

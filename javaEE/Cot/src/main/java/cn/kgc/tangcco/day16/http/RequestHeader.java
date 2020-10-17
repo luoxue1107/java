@@ -1,4 +1,4 @@
-package cn.kgc.tangcco.day16.contrtoller.http;
+package cn.kgc.tangcco.day16.http;
 
 import cn.hutool.http.useragent.UserAgent;
 import cn.hutool.http.useragent.UserAgentUtil;
