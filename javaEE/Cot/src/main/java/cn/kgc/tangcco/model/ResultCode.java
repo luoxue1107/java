@@ -1,7 +1,7 @@
 package cn.kgc.tangcco.model;
 
 /**
- * @author 李昊哲
+ * @author 李庆华
  * @Description
  * @create 2020/9/6 上午9:15
  */
@@ -36,7 +36,7 @@ public enum ResultCode {
      */
     DATA_ERROR("49999", "数据异常", "接口调用异常"),
     /**
-     * 登录失败 接口调用异常
+     * 登录成功
      */
     LOGIN_SUCCESS("65000","登录成功","登录成功"),
 

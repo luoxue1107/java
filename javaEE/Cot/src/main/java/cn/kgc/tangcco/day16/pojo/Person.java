@@ -67,11 +67,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Person(Integer id, String uuid, String idCard, String fisrName, String lastName) {
+    public Person(Integer id, String uuid, String idCard, String formerName, String lastName) {
         this.id = id;
         this.uuid = uuid;
         this.idCard = idCard;
-        this.formerName = fisrName;
+        this.formerName = formerName;
         this.lastName = lastName;
     }
 

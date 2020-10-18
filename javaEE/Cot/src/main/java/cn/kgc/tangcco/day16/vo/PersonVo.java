@@ -27,8 +27,8 @@ public class PersonVo extends Person {
      */
     private Integer age;
 
-    public PersonVo(Integer id, String uuid, String idCard, String fisrName, String lastName) {
-        super(id, uuid, idCard, fisrName, lastName);
+    public PersonVo(Integer id, String uuid, String idCard, String formerName, String lastName) {
+        super(id, uuid, idCard, formerName, lastName);
         this.gender = IdcardUtil.getGenderByIdCard(idCard);
         this.birthday = IdcardUtil.getBirthDate(idCard);
         this.age = IdcardUtil.getAgeByIdCard(idCard);
