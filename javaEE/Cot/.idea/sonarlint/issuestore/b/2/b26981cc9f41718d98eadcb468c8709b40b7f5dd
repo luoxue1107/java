@@ -1,11 +1,35 @@
 
-^	java:S125§"<This block of commented-out lines of code should be removed.(‚ÒŒ§ûÿÿÿÿ8ğãÍ®Ó.
-V	java:S106š"9Replace this use of System.out or System.err by a logger.(Ê¡›Ì8ğãÍ®Ó.
-L
-java:S3740t"/Provide the parametrized type for this generic.(²»òÖ8Ÿ¶’®Ó.
-Z	java:S106)"9Replace this use of System.out or System.err by a logger.(÷úÆşÿÿÿÿ8‘ç­Ó.
-[	java:S106›"9Replace this use of System.out or System.err by a logger.(÷úÆşÿÿÿÿ8ğãÍ®Ó.
-U	java:S106("9Replace this use of System.out or System.err by a logger.(ööÛ§8¿¼Á‚Ó.
+]
+java:S1854Õ"?Remove this useless assignment to local variable "resposeText".(²»òÖ8àåÙÒÓ.
+U	java:S106{"9Replace this use of System.out or System.err by a logger.(±¤ª¹8‘Ëÿ×Ó.
+[	java:S106‡"9Replace this use of System.out or System.err by a logger.(œ„ïÒÿÿÿÿÿ8î¶ºÔÓ.
+d
+java:S3252–"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(›à‚Ÿ8Ï•ÓÕÓ.
 M
-java:S3740–"/Provide the parametrized type for this generic.(²»òÖ8ğãÍ®Ó.
-U	java:S106}"9Replace this use of System.out or System.err by a logger.(ööÛ§8Ÿ¶’®Ó.
+java:S3740¡"/Provide the parametrized type for this generic.(²»òÖ8Ÿ¶’®Ó.
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(÷úÆşÿÿÿÿ8‘ç­Ó.
+[	java:S106‘"9Replace this use of System.out or System.err by a logger.(ÜßÙ“ıÿÿÿÿ8Ï¸ÉÔÓ.
+[	java:S106È"9Replace this use of System.out or System.err by a logger.(÷úÆşÿÿÿÿ8ğãÍ®Ó.
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(ööÛ§8¿¼Á‚Ó.
+V	java:S106Ç"9Replace this use of System.out or System.err by a logger.(Ê¡›Ì8ğãÍ®Ó.
+Z	java:S106i"9Replace this use of System.out or System.err by a logger.(ŸÑ…°üÿÿÿÿ8ÛØ€ÙÓ.
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(Á®ó÷üÿÿÿÿ8”í¿ÔÓ.
+M
+java:S3740Õ"/Provide the parametrized type for this generic.(²»òÖ8àåÙÒÓ.
+M
+java:S3740ã"/Provide the parametrized type for this generic.(²»òÖ8×ÆŸÓÓ.
+V	java:S106ª"9Replace this use of System.out or System.err by a logger.(ööÛ§8Ÿ¶’®Ó.
+
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ8•½ß×Ó.
+U	java:S106ü"9Replace this use of System.out or System.err by a logger.(ÂŒ×I8‘ôÀÓÓ.
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ì­øúÿÿÿÿ8ºÁÙÓ.
+[	java:S106æ"9Replace this use of System.out or System.err by a logger.(Ù€è™şÿÿÿÿ8×ÆŸÓÓ.
+M
+java:S3740Ã"/Provide the parametrized type for this generic.(²»òÖ8ğãÍ®Ó.
+^	java:S125¥"<This block of commented-out lines of code should be removed.(Öµâøüÿÿÿÿ8‘ôÀÓÓ.
+V
+java:S4719z"9Replace charset name argument with StandardCharsets.UTF_8(§¦âÓ8Íõö×Ó.
+]
+java:S1854ã"?Remove this useless assignment to local variable "resposeText".(²»òÖ8×ÆŸÓÓ.
+[	java:S106ÿ"9Replace this use of System.out or System.err by a logger.(ì¿Û©üÿÿÿÿ8ƒ‹¾ÔÓ.
+[	java:S106Ö"9Replace this use of System.out or System.err by a logger.(²ãñ‹ùÿÿÿÿ8àåÙÒÓ.

@@ -1,0 +1,29 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ööÛ§8Ÿ¶’®Ó.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ÜßÙ“ýÿÿÿÿ8Ï¸ÉÔÓ.
+g
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ŠËÌî8Á§‡¯Ô.
+Z
+java:S1854"?Remove this useless assignment to local variable "resposeText".(²»òÖ8×ÆŸÓÓ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ž÷úÆþÿÿÿÿ8‘çŽ­Ó.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ööÛ§8¿¼Á‚Ó.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(±¤ª¹8‘Ëÿ×Ó.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(Á®ó÷üÿÿÿÿ8”í¿ÔÓ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ì¿Û©üÿÿÿÿ8ƒ‹¾ÔÓ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ž÷úÆþÿÿÿÿ8ðãÍ®Ó.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ŸÑ…°üÿÿÿÿ8ÛØ€ÙÓ.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ê¡›Ì8ðãÍ®Ó.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(Ù€è™þÿÿÿÿ8×ÆŸÓÓ.
+R	java:S106"9Replace this use of System.out or System.err by a logger.(ÂŒ×I8‘ôÀÓÓ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(œ„ïÒÿÿÿÿÿ8î¶ºÔÓ.
+Z
+java:S1854"?Remove this useless assignment to local variable "resposeText".(²»òÖ8àåÙÒÓ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ì­øúÿÿÿÿ8ºÁÙÓ.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(²ãñ‹ùÿÿÿÿ8àåÙÒÓ.
+Y
+java:S1128">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ÞÛ8Á§‡¯Ô.
+[	java:S125"<This block of commented-out lines of code should be removed.(Öµâøüÿÿÿÿ8‘ôÀÓÓ.
+
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ8•½ß×Ó.
+T
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(§¦âÓ8­½ˆ¯Ô.
