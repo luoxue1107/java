@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Oct 16 18:50:14 CST 2020
+#Fri Oct 23 19:06:18 CST 2020
+maven-monitor-2.2.1.jar>central=
 maven-monitor-2.2.1.pom>alimaven=
 maven-monitor-2.2.1.jar>alimaven=
 maven-monitor-2.2.1.pom>central=
