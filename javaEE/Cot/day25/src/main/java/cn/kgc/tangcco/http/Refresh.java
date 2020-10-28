@@ -17,7 +17,7 @@ import java.util.Date;
  * @date 2020/10/23 17:08
  */
 @WebServlet(urlPatterns = "/refresh.do")
-public class Refresh extends HttpServlet {
+class Refresh extends HttpServlet {
     private static final long serialVersionUID = 3490942121977700577L;
 
     // 处理 GET 方法请求的方法

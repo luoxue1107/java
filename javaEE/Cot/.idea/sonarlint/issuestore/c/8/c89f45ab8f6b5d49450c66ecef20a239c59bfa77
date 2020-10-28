@@ -1,9 +1,10 @@
 
-d
-java:S1192N"HDefine a constant instead of duplicating this literal "</td>\n" 4 times.(òä­58æ»ÃÖ.
-U	java:S106,"9Replace this use of System.out or System.err by a logger.(áˆ×ñ8™ìÅÖ.
-u
-java:S1192N"YDefine a constant instead of duplicating this literal "                    <td>" 4 times.(òä­58æ»ÃÖ.
-I
-java:S1602K",Remove useless curly braces around statement(íßô¦8æ»ÃÖ.
-U	java:S106-"9Replace this use of System.out or System.err by a logger.( Ğãü8ìöÇÖ.
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(–åà’şÿÿÿÿ8ûàË»Ö.
+U	java:S1065"9Replace this use of System.out or System.err by a logger.( Ğãü8ìöÇÖ.
+J
+java:S1604-"(Make this anonymous inner class a lambda(ÆÈ¶ùÿÿÿÿ8ûàË»Ö.
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(áˆ×ñ8™ìÅÖ.
+e
+java:S1192W"HDefine a constant instead of duplicating this literal "</td>\n" 5 times.(é…ƒÄ8ûàË»Ö.
+v
+java:S14880"YImmediately return this expression instead of assigning it to the temporary variable "i".(¶ä¸š8ûàË»Ö.

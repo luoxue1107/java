@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -14,10 +15,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="day20" target="14" />
-      <module name="day20 (1) (org.example)" target="1.5" />
       <module name="day23" target="14" />
       <module name="day25" target="14" />
       <module name="day26" target="14" />
+      <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
