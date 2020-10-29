@@ -1,13 +1,7 @@
 
-H
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8°°şÏÖ.
-Z
-java:S1128"8Remove this unused import 'org.joda.time.LocalDateTime'.(ç¬Ÿùÿÿÿÿ8§ãïÏÖ.
-[
-java:S1128"9Remove this unused import 'cn.hutool.core.date.DateTime'.(»õ‰úÿÿÿÿ8°°şÏÖ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(úœüıÿÿÿÿ8€¯ÿÏÖ.
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(úÈÂşÿÿÿÿ8ªÌ·ÏÖ.
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(•¶Ğ²ÿÿÿÿÿ8ªÌ·ÏÖ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(•¶Ğ²ÿÿÿÿÿ8ªÌ·ÏÖ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(úÈÂşÿÿÿÿ8ªÌ·ÏÖ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(úœüıÿÿÿÿ8€¯ÿÏÖ.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çûÜÛûÿÿÿÿ
 £
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó——Îøÿÿÿÿ8¢ëïÎÖ.
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó——Îøÿÿÿÿ8¢ëïÎÖ.

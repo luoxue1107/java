@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Sun Sep 27 10:13:30 CST 2020
+#Wed Oct 28 10:47:38 CST 2020
 groovy-2.4.16.pom>alimaven=
 groovy-2.4.16.jar>alimaven=
+groovy-2.4.16.jar>central=
+groovy-2.4.16.pom>central=
