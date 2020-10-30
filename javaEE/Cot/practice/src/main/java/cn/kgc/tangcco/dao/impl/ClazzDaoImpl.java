@@ -18,7 +18,7 @@ import java.util.List;
 public class ClazzDaoImpl implements ClazzDao {
     @Override
     public List<Clazz> selectAllClazzs() {
-        List<Clazz> clazzlist = new ArrayList<Clazz>();
+        List<Clazz> clazzlist = new ArrayList<>();
         JDBCUtil jdbcUtil= new JDBCUtil();
         String sql= "select * from class";
         ResultSet resultSet = jdbcUtil.executeQuery(sql);
@@ -29,8 +29,43 @@ public class ClazzDaoImpl implements ClazzDao {
                 }
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
+                System.out.println("dao层 教室查看");
                 clazzlist.forEach(clazz -> System.out.println(JSON.toJSONString(clazz)));
             }
+            jdbcUtil.close();
         return clazzlist;
+    }
+
+    @Override
+    public Integer insertOneClazz(Clazz clazz) {
+        JDBCUtil jdbcUtil= new JDBCUtil();
+        String sql= "insert into class(name) values (?)";
+        System.out.println("dao层 教室添加");
+        jdbcUtil.close();
+        return jdbcUtil.executeUpdate(sql, clazz.getName());
+    }
+
+    @Override
+    public Clazz selectClazzById(Integer id) {
+        return null;
+    }
+
+    @Override
+    public Integer updateOneClazz(Clazz clazz) {
+        return null;
+    }
+
+    @Override
+    public Integer deleteClazzById(Integer id) {
+        JDBCUtil jdbcUtil = new JDBCUtil();
+        String sql="delete from class where id = ?";
+        if (id != null) {
+            System.out.println("dao层 教室删除");
+            jdbcUtil.close();
+            return jdbcUtil.executeUpdate(sql,id);
+        }else {
+            jdbcUtil.close();
+            return 0;
+        }
     }
 }

@@ -1,0 +1,8 @@
+
+a	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ8Ó¬ÅÂ×.
+n Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(™§¾—8Ó¬ÅÂ×.
+TWeb:TableWithoutCaptionCheck" Add a description to this table.(·ê£ûÿÿÿÿ8Ó¬ÅÂ×.
+s Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ıÀ¶Ûûÿÿÿÿ8§¡Ä×.
+E	Web:S1827")Remove this deprecated "align" attribute.(µÄ‹È8Ó¬ÅÂ×.
+s Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(¯éÏŒúÿÿÿÿ8Ó¬ÅÂ×.
+jWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ8Ó¬ÅÂ×.

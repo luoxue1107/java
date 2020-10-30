@@ -1,10 +1,10 @@
 
-U	java:S106 "9Replace this use of System.out or System.err by a logger.(¦¹Ô‹8ìÀóÖ.
 R
 java:S1128"6Remove this unused import 'com.alibaba.fastjson.JSON'.(Ö¢å$8øÚÍš×.
 M
 java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8²³Ìš×.
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ï–Êš×.
 Z
 java:S1128"8Remove this unused import 'cn.kgc.tangcco.pojo.Student'.(§âãÒúÿÿÿÿ8ÊÂÀš×.
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(¦¹Ô‹8ìÀóÖ.
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ï–Êš×.

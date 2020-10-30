@@ -1,5 +1,5 @@
 
-U	java:S106%"9Replace this use of System.out or System.err by a logger.(³Â€¼8ÛĞê÷Ö.
 r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò®Ç­ûÿÿÿÿ8í¤ëÖ.
 {
 java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ò®Ç­ûÿÿÿÿ8ÓÊëÖ.
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(³Â€¼8ÛĞê÷Ö.

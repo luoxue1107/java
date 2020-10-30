@@ -61,16 +61,16 @@ public class JDBCUtil {
      * @param objects object数组
      * @return 结果集
      */
-   public   ResultSet executeUpdate(String sql, Object...objects){
+   public   Integer executeUpdate(String sql, Object...objects){
        try {
            statement =connection.prepareStatement(sql);
            for (int i = 0; i < objects.length; i++) {
                statement.setObject(i+1,objects[i]);
            }
-          return statement.executeQuery();
+          return statement.executeUpdate();
        } catch (SQLException throwables) {
            throwables.printStackTrace();
-           return null;
+           return 0;
        }
    }
 

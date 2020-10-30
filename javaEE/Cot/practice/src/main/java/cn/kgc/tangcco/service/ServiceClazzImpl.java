@@ -13,4 +13,23 @@ public class ServiceClazzImpl implements ServiceClazz {
     public List<Clazz> getClazzList() {
         return new ClazzDaoImpl().selectAllClazzs();
     }
+
+    @Override
+    public Integer addOneClazz(Clazz clazz) {
+        return new ClazzDaoImpl().insertOneClazz(clazz);
+    }
+    @Override
+    public Clazz getClazzById(Integer id) {
+        return null;
+    }
+
+    @Override
+    public Integer setOneClazz(Clazz clazz) {
+        return null;
+    }
+
+    @Override
+    public Integer delClazzById(Integer id) {
+        return  new ClazzDaoImpl().deleteClazzById(id);
+    }
 }

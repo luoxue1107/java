@@ -18,6 +18,44 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>add_studentServlet</servlet-name>
+    <servlet-class>cn.kgc.tangcco.servlet.add_studentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_studentServlet</servlet-name>
+    <url-pattern>/add_student</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ClazzServlet</servlet-name>
+    <servlet-class>cn.kgc.tangcco.servlet.ClazzServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClazzServlet</servlet-name>
+    <url-pattern>/clazzLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>add_ClazzServlet</servlet-name>
+    <servlet-class>cn.kgc.tangcco.servlet.add_ClazzServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_ClazzServlet</servlet-name>
+    <url-pattern>/addClazz</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>add_ClazzLoginServlet</servlet-name>
+    <servlet-class>cn.kgc.tangcco.servlet.add_ClazzLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>add_ClazzLoginServlet</servlet-name>
+  <url-pattern>/addClazzLogin</url-pattern>
+</servlet-mapping>
+
+
+
+  <servlet>
     <servlet-name>ShowError</servlet-name>
     <servlet-class>cn.kgc.tangcco.error.ShowError</servlet-class>
   </servlet>
@@ -25,6 +63,7 @@
     <servlet-name>ShowError</servlet-name>
     <url-pattern>/error</url-pattern>
   </servlet-mapping>
+
 <!--监听-->
   <listener>
     <listener-class>cn.kgc.tangcco.Listener.Listener</listener-class>

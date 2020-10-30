@@ -33,6 +33,6 @@ public class StudentServlet extends HttpServlet {
         }
         studentPage = studentService.getStudentList(Integer.valueOf(page), 2);
         req.setAttribute("studentPage", studentPage);
-        req.getRequestDispatcher("login.jsp").forward(req, resp);
+        req.getRequestDispatcher("stndentLogin.jsp").forward(req, resp);
     }
 }

@@ -33,8 +33,11 @@ public class Clazz {
     }
 
     public Clazz(Integer id, String name) {
+        this(name);
         this.id = id;
-        this.name = name;
+    }
+    public Clazz(String name){
+       this.name = name;
     }
 
     public Clazz() {}
