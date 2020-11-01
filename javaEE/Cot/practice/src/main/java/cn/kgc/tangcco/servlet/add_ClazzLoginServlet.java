@@ -12,6 +12,7 @@ import java.io.IOException;
  * @date 2020/10/30 17:25
  */
 public class add_ClazzLoginServlet extends HttpServlet {
+    private static final long serialVersionUID = 238922790748108694L;
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String contextPath = req.getContextPath();

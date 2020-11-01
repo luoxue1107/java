@@ -11,11 +11,12 @@ import java.util.List;
  */
 public interface ClazzDao {
     /**
-     * 导入数据库教室表
-     *
-     * @return 返回一个教室对象集合
+     *  导入数据库教室表
+     * @param initial 分页初始
+     * @param length 一页多少数据
+     * @return 分好页的数据
      */
-    List<Clazz> selectAllClazzs();
+    List<Clazz> selectAllClazzs(Integer initial,Integer length);
 
     /**
      *  教室信息存到数据库
@@ -24,6 +25,11 @@ public interface ClazzDao {
      */
     Integer insertOneClazz(Clazz clazz);
 
+    /**
+     * 查看教室信息数据总数量
+     * @return 返回总数
+     */
+    Integer selectClazzCount();
     Clazz selectClazzById(Integer id);
 
     Integer updateOneClazz(Clazz clazz);

@@ -7,15 +7,19 @@ import java.util.List;
  * @Description
  * @date 2020/10/29 11:48
  */
-public class StudentPage {
+public class Page {
     /**
      * 学生对象集合
      */
-    private List<Student> students ;
+    private List<Student> students;
+    /**
+     *
+     */
+    private List<Clazz> clazzList;
     /**
      * 行数
      */
-    private  Integer rowCount;
+    private Integer rowCount;
     /**
      * 总页数
      */
@@ -33,14 +37,20 @@ public class StudentPage {
         return students;
     }
 
-    public StudentPage(List<Student> students, Integer rowCount, Integer pageSize, Integer pageCount, Integer pageNum) {
-        this.students = students;
+    public Page( Integer rowCount, Integer pageSize, Integer pageCount, Integer pageNum) {
         this.rowCount = rowCount;
         this.pageSize = pageSize;
         this.pageCount = pageCount;
         this.pageNum = pageNum;
     }
-    public StudentPage(){}
+    public Page(List<Student> students, Integer rowCount, Integer pageSize, Integer pageCount, Integer pageNum) {
+        this(rowCount,pageSize,pageCount,pageNum);
+        this.students=students;
+    }
+
+
+    public Page() {
+    }
 
     public void setStudents(List<Student> students) {
         this.students = students;
@@ -76,5 +86,13 @@ public class StudentPage {
 
     public void setPageNum(Integer pageNum) {
         this.pageNum = pageNum;
+    }
+
+    public List<Clazz> getClazzList() {
+        return clazzList;
+    }
+
+    public void setClazzList(List<Clazz> clazzList) {
+        this.clazzList = clazzList;
     }
 }

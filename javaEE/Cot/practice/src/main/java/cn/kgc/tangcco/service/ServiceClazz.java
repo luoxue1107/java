@@ -1,8 +1,7 @@
 package cn.kgc.tangcco.service;
 
 import cn.kgc.tangcco.pojo.Clazz;
-
-import java.util.List;
+import cn.kgc.tangcco.pojo.Page;
 
 /**
  * @author 李庆华
@@ -14,8 +13,10 @@ public interface ServiceClazz {
      * 调用底层Dao selectAllClazzs方法
      *
      * @return 返回教室集合
+     * @param page 页码
+     * @param size 一页的总数
      */
-    public List<Clazz> getClazzList();
+    public Page getClazzList(Integer page,Integer size);
 
     /**
      *  调用底层Dao insertOneClazz方法

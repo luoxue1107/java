@@ -1,7 +1,34 @@
 
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(àôÌ8›€ğå×.
+U	java:S1062"9Replace this use of System.out or System.err by a logger.(ÌñÎè8¹ı–î×.
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(¹‘®øşÿÿÿÿ8›€ğå×.
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(Åá—•şÿÿÿÿ8›€ğå×.
+h
+java:S11924"KDefine a constant instead of duplicating this literal "User-Agent" 3 times.(Ê„ãï8›€ğå×.
 œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó——Îøÿÿÿÿ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó——Îøÿÿÿÿ
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(ÆÀûı8”ëßå×.
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(Üµ˜8›€ğå×.
+`
+java:S1854">Remove this useless assignment to local variable "requestURL".(åÀ‘”ûÿÿÿÿ8øèî×.
+U	java:S106="9Replace this use of System.out or System.err by a logger.(­˜‡“8›€ğå×.
+Z	java:S106J"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ8›€ğå×.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çûÜÛûÿÿÿÿ
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(úÈÂşÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(úœüıÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(•¶Ğ²ÿÿÿÿÿ
+U	java:S106P"9Replace this use of System.out or System.err by a logger.(Ö©‹8›€ğå×.
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(Åá—•şÿÿÿÿ8”ûŠî×.
+X	java:S1250"<This block of commented-out lines of code should be removed.(›¹£¸8ÑÛöå×.
+}
+java:S11921"[Define a constant instead of duplicating this literal "==========================" 3 times.(Åá—•şÿÿÿÿ8¦”‹î×.
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(ÿİüéùÿÿÿÿ8›€ğå×.
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(Ê„ãï8›€ğå×.
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(Àé½şÿÿÿÿ8›€ğå×.
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(÷‰Ç¶8„áœî×.
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(Ü’™èùÿÿÿÿ
+M	java:S106%"9Replace this use of System.out or System.err by a logger.(Òéõ5
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(¬ê†
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(³ª¢óúÿÿÿÿ8›€ğå×.
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(¨’€Üúÿÿÿÿ8›€ğå×.
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(ôŠÿğúÿÿÿÿ8›€ğå×.
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(È™ÁŒ8…éˆî×.
+Q
+java:S1481"/Remove this unused "requestURL" local variable.(åÀ‘”ûÿÿÿÿ8øèî×.

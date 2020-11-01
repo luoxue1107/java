@@ -1,9 +1,6 @@
 package cn.kgc.tangcco.service;
 
-import cn.kgc.tangcco.pojo.Student;
-import cn.kgc.tangcco.pojo.StudentPage;
-
-import java.util.List;
+import cn.kgc.tangcco.pojo.Page;
 
 /**
  * @author 李庆华
@@ -17,5 +14,5 @@ public interface StudentService {
      * @param size 总数
      * @return 学生对象集合
      */
-    public StudentPage getStudentList(Integer page, Integer size);
+    public Page getStudentList(Integer page, Integer size);
 }

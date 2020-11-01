@@ -1,6 +1,7 @@
 cn\kgc\tangcco\service\StudentServiceImpl.class
 cn\kgc\tangcco\error\ShowError.class
 cn\kgc\tangcco\servlet\add_studentServlet.class
+cn\kgc\tangcco\pojo\Page.class
 cn\kgc\tangcco\dao\impl\StudentDaoImpl.class
 cn\kgc\tangcco\pojo\Student.class
 cn\kgc\tangcco\servlet\ClazzServlet.class
@@ -10,12 +11,13 @@ cn\kgc\tangcco\service\StudentService.class
 cn\kgc\tangcco\dao\ClazzDao.class
 cn\kgc\tangcco\servlet\StudentServlet.class
 cn\kgc\tangcco\servlet\add_ClazzLoginServlet.class
-cn\kgc\tangcco\pojo\StudentPage.class
 cn\kgc\tangcco\servlet\del_ClazzServlet.class
 cn\kgc\tangcco\util\jdbc\JDBCUtil.class
 cn\kgc\tangcco\dao\StudentDao.class
 cn\kgc\tangcco\dao\impl\ClazzDaoImpl.class
 cn\kgc\tangcco\util\character\Character.class
 cn\kgc\tangcco\pojo\Clazz.class
+cn\kgc\tangcco\servlet\set_ClazzServlet.class
 cn\kgc\tangcco\service\ServiceClazzImpl.class
 cn\kgc\tangcco\servlet\add_ClazzServlet.class
+cn\kgc\tangcco\servlet\set_ClazzLoginServlet.class

@@ -1,10 +1,13 @@
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\add_studentServlet.java
+D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\set_ClazzServlet.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\util\jdbc\JDBCUtil.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\service\StudentServiceImpl.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\dao\ClazzDao.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\error\ShowError.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\add_ClazzServlet.java
+D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\add_ClazzLoginServlet.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\service\ServiceClazz.java
+D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\del_ClazzServlet.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\service\StudentService.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\StudentServlet.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\Listener\Listener.java
@@ -12,9 +15,9 @@ D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\pojo\Clazz.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\ClazzServlet.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\dao\impl\StudentDaoImpl.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\util\character\Character.java
-D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\add_ClazzLogin.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\pojo\Student.java
-D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\pojo\StudentPage.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\dao\StudentDao.java
+D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\servlet\set_ClazzLoginServlet.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\dao\impl\ClazzDaoImpl.java
 D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\service\ServiceClazzImpl.java
+D:\Items\JavaEE\Cot\practice\src\main\java\cn\kgc\tangcco\pojo\Page.java

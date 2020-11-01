@@ -9,13 +9,13 @@ import java.io.IOException;
 /**
  * @author 李庆华
  * @Description
- * @date 2020/10/30 14:35
+ * @date 2020/11/1 14:55
  */
-public class add_studentServlet extends HttpServlet {
-    private static final long serialVersionUID = 7896577649884997361L;
+public class set_ClazzLoginServlet extends HttpServlet {
+    private static final long serialVersionUID = -474613266977269262L;
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("add_Student.jsp").forward(req,resp);
-
+        req.setAttribute("id",req.getParameter("id"));
+        req.getRequestDispatcher("set_Clazz.jsp").forward(req, resp);
     }
 }

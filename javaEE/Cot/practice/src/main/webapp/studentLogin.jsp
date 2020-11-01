@@ -45,9 +45,9 @@
 <%-- 首页和上一页判断是否是当前页面 开始--%>
         <c:choose>
             <c:when test="${studentPage.pageNum!=1}">
-                <a href="${Response.getContextPath}?page=1" class="btn btn-primary btn-sm "
+                <a href="${pageContext.request.contextPath}/studentLogin?page=1" class="btn btn-primary btn-sm "
                    role="button">首页</a>
-                <a href="${Response.getContextPath}?page=${studentPage.pageNum-1}" class="btn btn-primary btn-sm "
+                <a href="${pageContext.request.contextPath}/studentLogin?page=${studentPage.pageNum-1}" class="btn btn-primary btn-sm "
                    role="button">&lArr;</a>
             </c:when>
             <c:otherwise> <a href="" class="btn btn-primary btn-sm disabled" role="button">首页</a>
@@ -59,9 +59,9 @@
         <c:forEach begin="1" end="${studentPage.pageCount+1}" var="v">
             <c:choose>
                 <c:when test="${studentPage.pageNum!=v}">
-                    <a href="${Response.getContextPath}?page=${v}" class="btn btn-primary btn-sm "
+                    <a href="${pageContext.request.contextPath}/studentLogin?page=${v}" class="btn btn-primary btn-sm "
                        role="button">${v}</a></c:when>
-                <c:otherwise><a href="${Response.getContextPath}?page=${v}" class="btn btn-primary btn-sm disabled"
+                <c:otherwise><a href="${pageContext.request.contextPath}/studentLogin?page=${v}" class="btn btn-primary btn-sm disabled"
                                 role="button">${v}</a></c:otherwise>
             </c:choose>
         </c:forEach>
@@ -70,9 +70,9 @@
 <%--    尾页和下一页样式 并判断当前页是否是最后一页 开始 --%>
         <c:choose>
             <c:when test="${studentPage.pageNum!=studentPage.pageCount+1}">
-                <a href="${Response.getContextPath}?page=${studentPage.pageNum+1}" class="btn btn-primary btn-sm "
+                <a href="${pageContext.request.contextPath}/studentLogin?page=${studentPage.pageNum+1}" class="btn btn-primary btn-sm "
                    role="button">&rArr;</a>
-            <a href="${Response.getContextPath}?page=${studentPage.pageCount+1}" class="btn btn-primary btn-sm"
+            <a href="${pageContext.request.contextPath}/studentLogin?page=${studentPage.pageCount+1}" class="btn btn-primary btn-sm"
                role="button">尾页</a>
             </c:when>
             <c:otherwise>

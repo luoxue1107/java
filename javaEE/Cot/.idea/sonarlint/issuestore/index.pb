@@ -109,8 +109,6 @@ l
 .practice/src/test/java/tangcco/vo/Student.java,a\5\a59a45280a9d70caaddce69f1b53bcb2d04fce05
 c
 3practice/src/test/java/tangcco/mysql/MySQLTest.java,3\b\3bc06a8c397ec5914eeedd8addbd56dc3027700b
-k
-;practice/src/main/java/cn/kgc/tangcco/pojo/StudentPage.java,6\2\62041624a11671ab2715d09ac56a7fd68d2b3129
 e
 5practice/src/main/java/cn/kgc/tangcco/pojo/Clazz.java,8\8\885f29291cf42b410f1b569d1711f71111dd3008
 g
@@ -121,8 +119,6 @@ o
 ?practice/src/main/java/cn/kgc/tangcco/service/ServiceClazz.java,4\b\4bfe137c142fd42a3d54952ffb76c2894e6a2c77
 s
 Cpractice/src/main/java/cn/kgc/tangcco/service/ServiceClazzImpl.java,e\8\e85e8e6af7132205dff42f834a439365c804617a
-u
-Epractice/src/main/java/cn/kgc/tangcco/servlet/PageStudentServlet.java,b\7\b7cd6ac7aeac7e3af530d90cbb66571254140131
 Z
 *practice/src/main/webapp/css/bootstrap.css,a\f\af079bfc1741e4cbc77cbffba44f6fd217465607
 S
@@ -143,8 +139,6 @@ v
 Fday20/src/main/java/cn/kgc/tangcco/day14/controller/ServletDemo03.java,1\9\19a465744dff4cfbe976b072d6dcc49beefab5e6
 o
 ?day20/src/main/java/cn/kgc/tangcco/day14/http/ResponseTest.java,1\b\1b8029d61383ca05427e6886862b7beeb232e325
-R
-"practice/src/main/webapp/login.jsp,7\8\78231b3e99a22709b3a07cbf542795d5426ffc8e
 u
 Epractice/src/main/java/cn/kgc/tangcco/servlet/add_studentServlet.java,7\e\7e05af0926bec20a50798f3fb6ce46b1a498eac6
 o
@@ -159,7 +153,9 @@ s
 Cpractice/src/main/java/cn/kgc/tangcco/servlet/add_ClazzServlet.java,d\8\d83ceda5626f5cbeff89b09f6e7f5513ad81be7b
 X
 (practice/src/main/webapp/add_Student.jsp,d\3\d3bbd9e228e07e1fc4524108b37ccf8a4507084e
-Y
-)practice/src/main/webapp/stndentLogin.jsp,b\e\be69d655ef2a44a3e0428260b007771b8c03fff2
 V
 &practice/src/main/webapp/add_Clazz.jsp,8\a\8a10cf1ecc63f210065c6f7acdab6c7977dd2acd
+d
+4practice/src/main/java/cn/kgc/tangcco/pojo/Page.java,0\4\04e890e0d39e471e83abd390d7e545bb3e45ddd0
+Y
+)practice/src/main/webapp/studentLogin.jsp,8\a\8a5a5e3f84a52fa4e14220840dc21e2d0cee449e

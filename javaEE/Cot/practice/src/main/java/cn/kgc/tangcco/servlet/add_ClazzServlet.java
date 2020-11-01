@@ -16,6 +16,7 @@ import java.io.IOException;
  * @date 2020/10/30 16:14
  */
 public class add_ClazzServlet extends HttpServlet {
+    private static final long serialVersionUID = -5074014956215770213L;
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Character.characterEncoding(req,resp,"text/html");
