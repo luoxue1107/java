@@ -1,0 +1,85 @@
+
+<div class="text-center" >
+<nav>
+    <ul class="pagination">
+	//生成一个 首页a标签  点击后给服务器 发生 一个 page(值为1)也就是页面1
+        <li><a href="<c:url value="st?page=1"/>">首页</a><>	    <<
+	// &laquo; 是一个 << 减减字符  点击减字符 触发a标签 给域名 后加 st?page(值为原来 页面-1 有一个三目运算 如果减一的值小于一那么 就判断是第一页不能在减了
+所以值页面值只能是1)
+        <li><a href="<c:url value="st?page=${page-1>1?page-1:1}"/>">&laquo;</a><>
+	// c:forEach 是jsp的 循环写法   beging 是初始值 end是最终值  varStatus 是循环属性  所有着个循环是存 1开始 到总页面数 停止 
+        <c:forEach begin="1" end="${totalPages}" varStatus="loop">
+	//这是又是一个三目运算 判断 循环的次数是否等于当前页面值 如果等于 生成一个 active 字符串  当作当前 页面数字 的class 
+            <c:set var="active" value="${loop.index==page?'active':''}"/>
+	//如果上面判断成功 是当前页面  li 的class 会有 active值 则可以对当前页面 数字 进行 css样式 等 改变 否则正常 显示 
+            <li class="${active}"><a
+	//循环显示 循环次数 1-总页面数  生成a标签 可用来点击 想服务器端 传值  
+                    href="<c:url value="st?page=${loop.index}"/>">${loop.index}</a>
+            <>
+        </c:forEach>
+
+	//加页  与 减页 相似  三目运算 有些同 判断  当前页面数 加1 后 是否小于 总页面 如果 小于 可以 继续 加 如果 不小于 那就是最后一页了
+        <li>
+            <a href="<c:url value="st?page=${page+1<totalPages?page+1:totalPages}"/>">&raquo;</a>
+        <>
+	//与首页同理
+        <li><a href="<c:url value="st?page=${totalPages}"/>">尾页</a><>
+    </ul>
+</nav>
+
+</div>
+
+
+获取  服务器端 的值
+<c:set var="totalUsers" value="${requestScope.totalUsers}"/>
+<c:set var="usersPerPage" value="${requestScope.usersPerPage}"/>
+<c:set var="totalPages" value="${requestScope.totalPages}"/>
+<c:set var="beginIndex" value="${requestScope.beginIndex}"/>
+<c:set var="endIndex" value="${requestScope.endIndex}"/>
+<c:set var="page" value="${requestScope.page}"/>
+<c:set var="currentPageUsers" value="${requestScope.users.subList(beginIndex,endIndex)}"/>
+
+
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	//获取 客户端 请求时传的 page 页的值
+        String p = req.getParameter("page");
+	
+        int page;
+	异常用来做成判断 如果 前端 传的page 值 无法 转为 int类型 整数 抛异常 则 把 page初始为1 
+        try {
+            //当前页数
+            page = Integer.valueOf(p);
+        } catch (NumberFormatException e) {
+            page = 1;
+        }
+
+        //用户总数
+        int totalUsers = users.size();
+
+        //每页用户数
+        int usersPerPage = 5;
+
+        //总页数
+        int totalPages = usersPerPage;
+
+        //本页起始用户序号 页面数 -1  乘 总数 就是 初始用户下标 
+        int beginIndex = (page - 1) * usersPerPage;
+
+        //本页末尾用户序号的下一个     当前页面的 初始下标 加上 一页的数量 就是 下一页的初始下标 
+        int endIndex = beginIndex + usersPerPage;
+	//判断 下页初始下标 超过 集合储存总个数
+        if (endIndex > totalUsers){ endIndex = totalUsers;}
+	
+	//把数据传到 跳转的网页上 
+        req.setAttribute("totalUsers", totalUsers);
+        req.setAttribute("usersPerPage", usersPerPage);
+        req.setAttribute("totalPages", totalPages);
+        req.setAttribute("beginIndex", beginIndex);
+        req.setAttribute("endIndex", endIndex);
+        req.setAttribute("page", page);
+        req.setAttribute("users", users);
+	//循环跳转 一个网页
+        req.getRequestDispatcher("test01.jsp").forward(req, resp);
+    }
+

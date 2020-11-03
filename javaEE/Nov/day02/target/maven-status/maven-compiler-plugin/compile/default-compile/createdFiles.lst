@@ -1,0 +1,17 @@
+cn\kgc\tangcco\dao\CourseDao.class
+cn\kgc\tangcco\dao\impl\StudentDaoImpl.class
+cn\kgc\tangcco\pojo\Student.class
+cn\kgc\tangcco\Listener\Listener.class
+cn\kgc\tangcco\dao\impl\CourseDaoImpl.class
+cn\kgc\tangcco\pojo\Course.class
+cn\kgc\tangcco\service\ServiceRelation.class
+cn\kgc\tangcco\service\impl\ServiceStudentImpl.class
+cn\kgc\tangcco\servlet\ServletAddCourse.class
+cn\kgc\tangcco\service\impl\ServiceRelationImpl.class
+cn\kgc\tangcco\util\jdbcUtil\JDBCUtil.class
+cn\kgc\tangcco\service\ServiceStudent.class
+cn\kgc\tangcco\dao\RelationDao.class
+cn\kgc\tangcco\service\ServiceCourse.class
+cn\kgc\tangcco\dao\StudentDao.class
+cn\kgc\tangcco\dao\impl\RelationDaoImpl.class
+cn\kgc\tangcco\service\impl\ServiceCourseImpl.class

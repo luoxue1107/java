@@ -159,3 +159,9 @@ d
 4practice/src/main/java/cn/kgc/tangcco/pojo/Page.java,0\4\04e890e0d39e471e83abd390d7e545bb3e45ddd0
 Y
 )practice/src/main/webapp/studentLogin.jsp,8\a\8a5a5e3f84a52fa4e14220840dc21e2d0cee449e
+V
+&practice/src/main/webapp/set_Clazz.jsp,3\5\355a2654d4c17b6cc7dea5b1eba0b8f65b1b401e
+x
+Hpractice/src/main/java/cn/kgc/tangcco/servlet/set_ClazzLoginServlet.java,1\a\1a5f4c0a170a00bc030b45b904027d3b63e9587a
+s
+Cpractice/src/main/java/cn/kgc/tangcco/servlet/set_ClazzServlet.java,d\2\d2a96fdba890d09fd011810e24a40d77d6f67776

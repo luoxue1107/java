@@ -1,352 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="83de9165-f72a-47e2-9224-665580e14079" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/../.m2/repository/javax/servlet/jstl/1.2/_remote.repositories" beforeDir="false" afterPath="$PROJECT_DIR$/../.m2/repository/javax/servlet/jstl/1.2/_remote.repositories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/2/0/2007894cf6344ec722e49fb12cf6fa08fc89a51b" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/2/0/2007894cf6344ec722e49fb12cf6fa08fc89a51b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/2/a/2a9d210ab973097f2b56853c0f025f1c07d00fe1" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/2/a/2a9d210ab973097f2b56853c0f025f1c07d00fe1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/d/3/d36e08a60ebc5a26a66f11db8eb23c0478a98879" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/d/3/d36e08a60ebc5a26a66f11db8eb23c0478a98879" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/e/c/ec27e95d0f491ba63a24e60857e371bb718612c1" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/e/c/ec27e95d0f491ba63a24e60857e371bb718612c1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/e/d/ed423c33b0168bff3a3f0d0b97b8f728524360ed" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaSE/Cot/.idea/sonarlint/issuestore/e/d/ed423c33b0168bff3a3f0d0b97b8f728524360ed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JavaEE.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/artifacts/Cot_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/artifacts/Cot_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__cn_hutool_hutool_all_5_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__com_alibaba_fastjson_1_2_74.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__com_github_binarywang_java_testdata_generator_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__com_google_zxing_core_3_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__commons_io_commons_io_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__jaxen_jaxen_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__joda_time_joda_time_2_10_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_springframework_spring_aop_5_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_springframework_spring_beans_5_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_springframework_spring_context_5_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_springframework_spring_core_5_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_springframework_spring_expression_5_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/0/00a3d783633b7ddbc77c117f22f6e40bf0274b15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/3/03d5f893c4202b9f37bdb8ac5f36312ee476ac3f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/7/0731efdd5193ca0d897309202fbd134fb8318a28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/9/0947b9c0a56b215ac2181156850159d0524142ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/1/8/18bd8706880734951661d9f18262a3c885abab29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/1/f/1f27062da7e562f2fdb92933b8ef7ba68706d951" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/1/f/1f3c8da579d6ff09737d46112d014ad211c5bef3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/2/4/248681e89a80376c6b815ceec7e94dab5e65f617" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/2/b/2bd3e80b77a4aa3bb7d5e6164ac2118e6bb8d7f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/4/3/4316dad057bc166fc0b31d28d3e2e651e236df9d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/4/4/447e02efbea174f6f71767c88153eb91d5f30578" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/c/5cd5396c0a7980942a91d8040c5107e09dd17887" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/e/5e2739d9f66d028dcb39129e815306d636fe8702" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/7/d/7dc1b985dbdef64642c9d3fe15e5d88cb1dda5a6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/8/3/834ce6410ba772257377253f85088dd954347347" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/9/2/921ab541b29cd2aba50bbba38a0af79890ebe16a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/9/d/9dd6dfae4e68ddc97aa5cd2d2ab286dc7bcb4985" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/9/f/9f7f8aabcb0607640b3c8af005f5e98600d23216" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/a/2/a29085ef1f64c84b996fa6fa532c3686ab9a53f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/b/2/b26981cc9f41718d98eadcb468c8709b40b7f5dd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/b/2/b2a86b32477a93fc7d39a47730085d0e6b3bfb7e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/b/5/b51f01b68c2ad3253ff6966faf63b383460d9776" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/b/b/bb70074f86f6cb3f3881825ce3ccfe7fa66bb14e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/c/8/c81deead09b023bff7526c002f1742278a454202" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/c/8/c85c95001b5d2462ef2025aa6a4241d99505cad7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/c/c/cc1022d9fcb8d5202079c31f74305cb6315fbcd0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/5/d59dff80a8c59528b850cadf7906af169c9fb374" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/9/d92a0429487cfc5a0d9fcfac06d9cbbb1ae9c42c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/e/a/ea1b2c9ae6f74bd7f035842126e63044ce0bee56" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/f/0/f046990b1137accb0fb859e3c7f9147e12ac1cb2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/f/8/f8fe69e49cf2b6c22daaab0f3dc3a45308e457bb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/f/a/fab3589f78763efe09e8ea6ea6f6a18a99ea5904" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/Cot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day14/controller/ServletDemo01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day14/controller/ServletDemo02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day14/controller/ServletDemo03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day14/http/ResponseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/http/ActionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/http/PersonAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/http/RequestHeader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/http/RequestLine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/http/ResponseAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/pojo/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/pojo/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/day16/vo/PersonVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/model/ImgType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/model/OrderBy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/model/PageParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/model/ResposeText.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/model/ResultCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/utils/cryptography/BaseCryptographyUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/utils/date/BaseDateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/utils/io/file/BaseFiltUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/utils/localdate/BaseLocalDateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/utils/localdatetime/BaseLocalDateTimeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/utils/servlet/BaseServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/java/cn/kgc/tangcco/utils/xml/BaseXmlUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/Demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/Demo01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/css/password.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/css/zhuce.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/acc-safe-ico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/askPic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/bannerNew.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/bk-login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/bk-zhuce-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/btn-now.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/footerBg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/headg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/line2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/line3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/login-image-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/login-image-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/login-image-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/menu_prog_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/selected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/slecd_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/slecd_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/sleeping.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/tel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/yanzhengma.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/zhuce-image-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/zhuce-image-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/zhuce-image-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/zhuce-over-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/zhuce-over-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/images/zhuce-over-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/js/jquery-1.11.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/js/zhuce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/password_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/password_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/zhuce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/zhuce1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/login/zhuceSucc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/logo/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/logo/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/logo/qrcode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/main/webapp/upload/2020/10/18/15/56/57/b670d033d98543eaaef27bdff1cd370f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/test/java/cn/kgc/tangcco/day14/Demo01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/src/test/resources/qrcode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/Demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/Demo01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/action/PersonAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/config/ServletConfig01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/config/ServletConfig02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/config/ServletConfig03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/config/ServletConfig04.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/context/ServletContext01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/context/ServletContext02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/context/ServletContext03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/controller/Persons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/controller/ServletDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/controller/ServletDemo02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/controller/ServletDemo03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/http/RequestHeader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/http/RequestLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/http/ResponseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/pojo/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/pojo/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/day14/vo/PersonVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/http/NetworkInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/http/RequestHeader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/http/RequestLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/lifecycle/ServletLifeCycle01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/lifecycle/ServletLifeCycle02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/model/ImgType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/model/OrderBy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/model/PageParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/model/ResposeText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/model/ResultCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/pojo/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/pojo/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/respose/ResposeAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/utils/cryptography/BaseCryptographyUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/utils/date/BaseDateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/utils/io/file/BaseFiltUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/utils/localdate/BaseLocalDateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/utils/localdatetime/BaseLocalDateTimeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/utils/servlet/BaseServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/utils/xml/BaseXmlUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/classes/cn/kgc/tangcco/vo/PersonVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/faces-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/commons-io-2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/core-3.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/dom4j-2.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/fastjson-1.2.73.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/filters-2.0.235-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/guava-19.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/hutool-all-5.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/java-testdata-generator-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/jaxen-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/joda-time-2.10.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/kaptcha-2.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/spring-aop-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/spring-beans-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/spring-context-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/spring-core-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/spring-expression-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/spring-jcl-5.2.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/lib/tomcat-servlet-api-8.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/css/password.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/css/zhuce.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/acc-safe-ico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/askPic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/bannerNew.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/bk-login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/bk-zhuce-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/btn-now.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/footerBg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/headg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/line2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/line3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/login-image-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/login-image-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/login-image-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/menu_prog_dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/selected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/shape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/slecd_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/slecd_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/sleeping.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/tel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/yanzhengma.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/zhuce-image-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/zhuce-image-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/zhuce-image-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/zhuce-over-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/zhuce-over-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/images/zhuce-over-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/js/jquery-1.11.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/js/zhuce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/password_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/password_3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/zhuce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/zhuce1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/login/zhuceSucc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/logo/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/logo/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/Cot/logo/qrcode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day14/controller/ServletDemo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day14/controller/ServletDemo02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day14/controller/ServletDemo03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day14/http/ResponseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/http/ActionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/http/PersonAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/http/RequestHeader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/http/RequestLine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/http/ResponseAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/pojo/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/pojo/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/day16/vo/PersonVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/model/ImgType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/model/OrderBy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/model/PageParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/model/ResposeText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/model/ResultCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/utils/cryptography/BaseCryptographyUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/utils/date/BaseDateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/utils/io/file/BaseFiltUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/utils/localdate/BaseLocalDateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/utils/localdatetime/BaseLocalDateTimeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/utils/servlet/BaseServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/classes/cn/kgc/tangcco/utils/xml/BaseXmlUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/test-classes/cn/kgc/tangcco/day14/Demo01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/test-classes/qrcode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/target/tomcat/logs/access_log.2020-10-14" beforeDir="false" />
+    <list default="true" id="2c540e16-16a7-485f-be55-555323617baa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/4/0420c902b27d76685a35d7fe996849bdf5263f7b" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/4/0420c902b27d76685a35d7fe996849bdf5263f7b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/1/6/160e38b484f07855b013d3349bb8cbebb0a6a1eb" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/1/6/160e38b484f07855b013d3349bb8cbebb0a6a1eb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/2/524fdfe88301ad6ab8f4c3e9b0411e92d87e450a" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/2/524fdfe88301ad6ab8f4c3e9b0411e92d87e450a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/d/5ddbd23878a5c7cbf9af0e05fd8e7eec3908b972" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/d/5ddbd23878a5c7cbf9af0e05fd8e7eec3908b972" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/8/a/8a5a5e3f84a52fa4e14220840dc21e2d0cee449e" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/8/a/8a5a5e3f84a52fa4e14220840dc21e2d0cee449e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/1/d1028231cad9f1c3ac68ad1750662f03253487b8" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/1/d1028231cad9f1c3ac68ad1750662f03253487b8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/8/d83ceda5626f5cbeff89b09f6e7f5513ad81be7b" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/8/d83ceda5626f5cbeff89b09f6e7f5513ad81be7b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/e/e/eecdede5fc3884f5a953f78c0f74bed3e63df5f8" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/e/e/eecdede5fc3884f5a953f78c0f74bed3e63df5f8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cot/practice/src/main/java/cn/kgc/tangcco/util/jdbc/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/practice/src/main/java/cn/kgc/tangcco/util/jdbc/JDBCUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,15 +28,14 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
-        <option name="userSettingsFile" value="C:\Program Files\maven\conf\settings.xml" />
+        <option name="mavenHome" value="D:\Program Files\idae\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1iqleqK9oXY7vSQb6NqMhl6HDGk" />
+  <component name="ProjectId" id="1jjKB7I3i2iFDPPEezMwZFQXER5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -378,77 +43,44 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day20" />
-    <property name="project.structure.last.edited" value="模块" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="83de9165-f72a-47e2-9224-665580e14079" name="默认的" comment="" />
-      <created>1602643103207</created>
+      <changelist id="2c540e16-16a7-485f-be55-555323617baa" name="Default Changelist" comment="" />
+      <created>1604311922751</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602643103207</updated>
-      <workItem from="1602643104341" duration="667000" />
-      <workItem from="1602844082119" duration="37000" />
-      <workItem from="1603193354110" duration="726000" />
+      <updated>1604311922751</updated>
+      <workItem from="1604311926554" duration="230000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="152" y="29" width="1038" height="794" key="#项目结构" timestamp="1602643188570">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1604312023647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="152" y="29" width="1038" height="794" key="#项目结构/0.0.1536.824@0.0.1536.824" timestamp="1602643188570" />
-    <state x="451" y="167" key="FileChooserDialogImpl" timestamp="1603193843779">
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604312023647" />
+    <state x="542" y="167" key="FileChooserDialogImpl" timestamp="1604312145667">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="451" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603193843779" />
-    <state x="355" y="31" key="NewModule_or_Project.wizard" timestamp="1603193868290">
+    <state x="542" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604312145667" />
+    <state x="3" y="0" key="new project wizard" timestamp="1604312154378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="355" y="31" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1603193868290" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1603193970186">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603193970186" />
-    <state x="246" y="0" key="new project wizard" timestamp="1603194077943">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="246" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1603194077943" />
+    <state x="3" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604312154378" />
   </component>
 </project>
