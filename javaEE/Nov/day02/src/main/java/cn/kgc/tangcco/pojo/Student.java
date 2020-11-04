@@ -1,6 +1,7 @@
 package cn.kgc.tangcco.pojo;
 
 import java.sql.Date;
+import java.util.List;
 
 /**
  * @author 李庆华
@@ -24,12 +25,24 @@ public class Student {
      * 出生日期
      */
     Date birthday;
+    /**
+     * 课程集合
+     */
+    List<Course> courses;
 
     public Student(Integer id, String name, String gender, Date birthday) {
         this.id = id;
         this.name = name;
         this.gender = gender;
         this.birthday = birthday;
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
     }
 
     public Student() {

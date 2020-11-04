@@ -10,7 +10,7 @@ import java.sql.*;
 public class JDBCUtil {
 
     public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    public static final String URL = "jdbc:mysql://192.168.240.5:3306/2020_10_28_01";
+    public static final String URL = "jdbc:mysql://192.168.53.39:3306/2020_10_28_02";
     public static final String USER = "root";
     public static final String PASSWORD = "123456";
 

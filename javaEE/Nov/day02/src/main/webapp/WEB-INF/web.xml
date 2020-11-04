@@ -3,7 +3,91 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--  Listener 监视 -->
     <listener>
         <listener-class>cn.kgc.tangcco.Listener.Listener</listener-class>
     </listener>
+    <!-- servlet -->
+    <servlet>
+        <servlet-name>servlet.AddOneCourse</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.AddOneCourse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet.AddOneCourse</servlet-name>
+        <url-pattern>/addCourse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delOneCourse</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.DelOneCourse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delOneCourse</servlet-name>
+        <url-pattern>/delCourse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getAllCourses</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.GetAllCourses</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getAllCourses</servlet-name>
+        <url-pattern>/getCourses</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getAllStudents</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.GetAllStudents</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getAllStudents</servlet-name>
+        <url-pattern>/getStudents</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>gotoAddCourse</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.GotoAddCourse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gotoAddCourse</servlet-name>
+        <url-pattern>/gotoCourse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>gotoRelation</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.GotoRelation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gotoRelation</servlet-name>
+        <url-pattern>/gotoRelation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>gotoSetCourse</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.GotoSetCourse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gotoSetCourse</servlet-name>
+        <url-pattern>/gotoSetCourse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>setRelation</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.SetRelation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>setRelation</servlet-name>
+        <url-pattern>/setRelation</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>setOneCourse</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.SetOneCourse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>setOneCourse</servlet-name>
+        <url-pattern>/setCourse</url-pattern>
+    </servlet-mapping>
+
+    <!-- servlet结束 -->
 </web-app>

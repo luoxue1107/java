@@ -51,7 +51,7 @@ public class RelationDaoImpl implements RelationDao {
         List<Course> courseList=new ArrayList<>();
         try {
             while (resultSet.next()) {
-                courseList.add(new Course(resultSet.getInt("cid"),resultSet.getString("name")));
+                courseList.add(new Course(resultSet.getInt("c.id"),resultSet.getString("name")));
             }
             return courseList;
         } catch (SQLException throwables) {

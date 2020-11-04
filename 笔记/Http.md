@@ -246,7 +246,7 @@ application/x-www-form-urlencoded ： <form encType=””>中默认的encType�
 
 multipart/form-data ： 需要在表单中进行文件上传时，就需要使用该格式
 
-#### **HttpServlet**
+## **HttpServlet**
 
 Servlet 生命周期可被定义为从创建直到毁灭的整个过程。以下是 Servlet 遵循的过程：
 
@@ -772,7 +772,7 @@ Servlet容器在销毁过滤器实例前调用该方法，在该方法中释放S
 
 如果目标资源是通过声明式异常处理机制调用时，那么该过滤器将被调用。除此之外，过滤器不会被调用。
 
-**Listener监听器**
+### **Listener监听器**
 
 listener也就是监听器，一个对象的监听另一个对象，当被监听的对象变化时，监听的对象会执行一系列动作。
 
@@ -897,6 +897,39 @@ public interface HttpSessionActivationListener extends EventListener {     publi
 ```
 
 激活和钝化
+
+### servlet异常的处理
+
+​	当一个 Servlet 抛出一个异常时，Web 容器在使用了 exception-type 元素的 **web.xml** 中搜索与抛出异常类型相匹配的配置。
+
+您必须在 web.xml 中使用 **error-page** 元素来指定对特定**异常** 或 HTTP **状态码** 作出相应的 Servlet 调用。
+
+Servlet ErrorHandler 与其他的 Servlet 的定义方式一样，且在 web.xml 中进行配置。
+
+如果有错误状态代码出现，不管为 404（Not Found 未找到）或 403（Forbidden 禁止），则会调用 ErrorHandler 的 Servlet。
+
+如果 Web 应用程序抛出 ServletException 或 IOException，那么 Web 容器会调用 ErrorHandler 的 Servlet。
+
+#### 请求属性 - 错误/异常
+
+以下是错误处理的 Servlet 可以访问的请求属性列表，用来分析错误/异常的性质。
+
+| 序号 | 属性 & 描述                                                  |
+| :--- | :----------------------------------------------------------- |
+| 1    | **javax.servlet.error.status_code** 该属性给出状态码，状态码可被存储，并在存储为 java.lang.Integer 数据类型后可被分析。 |
+| 2    | **javax.servlet.error.exception_type** 该属性给出异常类型的信息，异常类型可被存储，并在存储为 java.lang.Class 数据类型后可被分析。 |
+| 3    | **javax.servlet.error.message** 该属性给出确切错误消息的信息，信息可被存储，并在存储为 java.lang.String 数据类型后可被分析。 |
+| 4    | **javax.servlet.error.request_uri** 该属性给出有关 URL 调用 Servlet 的信息，信息可被存储，并在存储为 java.lang.String 数据类型后可被分析。 |
+| 5    | **javax.servlet.error.exception** 该属性给出异常产生的信息，信息可被存储，并在存储为 java.lang.Throwable 数据类型后可被分析。 |
+| 6    | **javax.servlet.error.servlet_name** 该属性给出 Servlet 的名称，名称可被存储，并在存储为 java.lang.String 数据类型后可被分析。 |
+
+
+
+
+
+
+
+
 
 网址
 
@@ -1025,6 +1058,12 @@ cookie 将持续下去，直到浏览器关闭。
 **String getComment()**
 
 获取 cookie 的注释，如果 cookie 没有注释则返回 null。
+
+
+
+
+
+
 
 postMan
 

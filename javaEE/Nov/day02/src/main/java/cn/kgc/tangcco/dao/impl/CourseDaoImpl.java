@@ -3,9 +3,11 @@ package cn.kgc.tangcco.dao.impl;
 import cn.kgc.tangcco.dao.CourseDao;
 import cn.kgc.tangcco.pojo.Course;
 import cn.kgc.tangcco.util.jdbcUtil.JDBCUtil;
+import com.alibaba.fastjson.JSON;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,14 +18,17 @@ import java.util.List;
 public class CourseDaoImpl implements CourseDao {
     @Override
     public List<Course> selectAllCourse() {
-        List<Course> courseList = null;
+        List<Course> courseList = new ArrayList<>();
         JDBCUtil jdbcUtil = new JDBCUtil();
         String sql = "select * from course";
         ResultSet resultSet = jdbcUtil.executeQuery(sql);
         try {
             while (resultSet.next()) {
+                System.out.println(resultSet.getString("name"));
+                System.out.println(resultSet.getInt("id"));
                 courseList.add(new Course(resultSet.getInt("id"), resultSet.getString("name")));
             }
+            courseList.forEach(course -> System.out.println(JSON.toJSONString(course)));
             return courseList;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
