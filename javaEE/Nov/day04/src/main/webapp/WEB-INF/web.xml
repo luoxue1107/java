@@ -3,6 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <listener>
+        <listener-class>cn.kgc.tangcco.Listener.Listener</listener-class>
+    </listener>
 <!--    servlet -->
 <servlet>
     <servlet-name>errorHandler</servlet-name>
@@ -12,8 +15,14 @@
         <servlet-name>errorHandler</servlet-name>
         <url-pattern>/ErrorHandler</url-pattern>
     </servlet-mapping>
-    
-    
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.Test</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/cat_test</url-pattern>
+    </servlet-mapping>
 <!--    异常处理-->
     <error-page>
         <error-code>404</error-code>

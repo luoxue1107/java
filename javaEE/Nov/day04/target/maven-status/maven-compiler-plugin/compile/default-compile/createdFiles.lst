@@ -1,4 +1,6 @@
 cn\kgc\tangcco\error\ShowError.class
-cn\kgc\tangcco\util\character\Character.class
 cn\kgc\tangcco\error\errorHandler.class
 cn\kgc\tangcco\Listener\Listener.class
+cn\kgc\tangcco\util\character\Character.class
+cn\kgc\tangcco\pojo\User.class
+cn\kgc\tangcco\servlet\Test.class

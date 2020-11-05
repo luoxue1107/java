@@ -664,7 +664,7 @@ HTTP 请求和 HTTP 响应消息的格式是类似的，结构如下：
 
 该方法发送一个状态码（通常为 404），连同一个在 HTML 文档内部自动格式化并发送到客户端的短消息。
 
-##### **Servlet 过滤器**
+#### **Servlet 过滤器**
 
 Servlet 过滤器可以动态地拦截请求和响应，以变换或使用包含在请求或响应中的信息。
 
@@ -923,31 +923,31 @@ Servlet ErrorHandler 与其他的 Servlet 的定义方式一样，且在 web.xml
 | 5    | **javax.servlet.error.exception** 该属性给出异常产生的信息，信息可被存储，并在存储为 java.lang.Throwable 数据类型后可被分析。 |
 | 6    | **javax.servlet.error.servlet_name** 该属性给出 Servlet 的名称，名称可被存储，并在存储为 java.lang.String 数据类型后可被分析。 |
 
+#### web配置文件里配置
+
+```XMl
+<!-- 异常报错页面 -->
+<error-page>
+  <!--  异常类型 -->
+    <exception-type>
+          javax.servlet.ServletException
+    </exception-type >
+  <!-- 指定异常页面 -->
+    <location>/ErrorHandler</location>
+</error-page>
+
+<!-- 状态码 错误页面 -->
+<error-page>
+    <!--指定状态码-->
+    <error-code>404</error-code>
+  <!-- 指定异常页面 -->
+    <location>/ErrorHandler</location>
+</error-page>
+```
 
 
 
-
-
-
-
-
-网址
-
-potocol domain port  context path  file
-
- jetty 和tomcat7 启动端服务器 都可以
-
-hosts
-
-DNS 解析
-
-HttpServlet类 和 父类GenericServlet类 
-
-uri与url的区别
-
-apache和tomcat有什么不同
-
-**Cookie**
+### **Cookie**
 
 服务器脚本向浏览器发送一组 Cookie。例如：姓名、年龄或识别号码等。
 
@@ -955,47 +955,88 @@ apache和tomcat有什么不同
 
 当下一次浏览器向 Web 服务器发送任何请求时，浏览器会把这些 Cookie 信息发送到服务器，服务器将使用这些信息来识别用户。
 
+
+
 **Servlet Cookie 处理需要对中文进行编码与解码，方法如下：**
 
 **编码:**
 
+```java
 String   str   =   java.net.URLEncoder.encode("中文"，"UTF-8");            
+```
 
 **解码:**
 
+```java
 String   str   =   java.net.URLDecoder.decode("编码后的字符串","UTF-8");  
+```
+
+
 
 能够通过请求方法 request.getCookies() 访问 Cookie，该方法将返回一个 Cookie 对象的数组。
 
-**设置 Cookie:**
+​	Set-Cookie 头包含了一个名称值对、一个 GMT 日期、一个路径和一个域。名称和值会被 URL 编码。expires 字段是一个指令，告诉浏览器在给定的时间和日期之后"忘记"该 Cookie。
+
+​	如果浏览器被配置为存储 Cookie，它将会保留此信息直到到期日期。如果用户的浏览器指向任何匹配该 Cookie 的路径和域的页面，它会重新发送 Cookie 到服务器。
+
+#### Servlet Cookie 方法
+
+以下是在 Servlet 中操作 Cookie 时可使用的有用的方法列表。
+
+| 序号 | 方法 & 描述                                                  |
+| :--- | :----------------------------------------------------------- |
+| 1    | **public void setDomain(String pattern)** 该方法设置 cookie 适用的域，例如 baidu.com。 |
+| 2    | **public String getDomain()** 该方法获取 cookie 适用的域，例如 baidu.com。 |
+| 3    | **public void setMaxAge(int expiry)** 该方法设置 cookie 过期的时间（以秒为单位）。如果不这样设置，cookie 只会在当前 session 会话中持续有效。 |
+| 4    | **public int getMaxAge()** 该方法返回 cookie 的最大生存周期（以秒为单位），默认情况下，-1 表示 cookie 将持续下去，直到浏览器关闭。 |
+| 5    | **public String getName()** 该方法返回 cookie 的名称。名称在创建后不能改变。 |
+| 6    | **public void setValue(String newValue)** 该方法设置与 cookie 关联的值。 |
+| 7    | **public String getValue()** 该方法获取与 cookie 关联的值。  |
+| 8    | **public void setPath(String uri)** 该方法设置 cookie 适用的路径。如果您不指定路径，与当前页面相同目录下的（包括子目录下的）所有 URL 都会返回 cookie。 |
+| 9    | **public String getPath()** 该方法获取 cookie 适用的路径。   |
+| 10   | **public void setSecure(boolean flag)** 该方法设置布尔值，表示 cookie 是否应该只在加密的（即 SSL）连接上发送。 |
+| 11   | **public void setComment(String purpose)** 设置cookie的注释。该注释在浏览器向用户呈现 cookie 时非常有用。 |
+| 12   | **public String getComment()** 获取 cookie 的注释，如果 cookie 没有注释则返回 null。 |
+
+#### **设置 Cookie:**
 
 创建一个 Cookie 对象：
 
 可以调用带有 cookie 名称和 cookie 值的 Cookie 构造函数，cookie 名称和 cookie 值都是字符串。
 
+```java
 Cookie cookie = new Cookie("key","value");
+```
 
 无论是名字还是值，都不应该包含空格或以下任何字符：
 
+```java
 [ ] ( ) = , " / ? @ : ;
+```
 
 设置最大生存周期：
 
 您可以使用 setMaxAge 方法来指定 cookie 能够保持有效的时间（以秒为单位）。下面将设置一个最长有效期为 24 小时的 cookie。
 
+```java
 cookie.setMaxAge(60*60*24); 
+```
 
 发送 Cookie 到 HTTP 响应头：
 
 您可以使用 response.addCookie 来添加 HTTP 响应头中的 Cookie.
 
+```java
 response.addCookie(cookie);
+```
 
-**读取 Cookie:**
+
+
+#### **读取 Cookie:**
 
 要读取 Cookie，您需要通过调用 HttpServletRequest 的 getCookies( ) 方法创建一个 javax.servlet.http.Cookie 对象的数组。然后循环遍历数组，并使用 getName() 和 getValue() 方法来访问每个 cookie 和关联的值。
 
-**删除 Cookie:**
+#### **删除 Cookie:**
 
 想删除一个 cookie，那么您只需要按照以下三个步骤进行：
 
@@ -1058,6 +1099,26 @@ cookie 将持续下去，直到浏览器关闭。
 **String getComment()**
 
 获取 cookie 的注释，如果 cookie 没有注释则返回 null。
+
+
+
+
+
+网址
+
+potocol domain port  context path  file
+
+ jetty 和tomcat7 启动端服务器 都可以
+
+hosts
+
+DNS 解析
+
+HttpServlet类 和 父类GenericServlet类 
+
+uri与url的区别
+
+apache和tomcat有什么不同
 
 
 
