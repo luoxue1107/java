@@ -772,7 +772,7 @@ Servlet容器在销毁过滤器实例前调用该方法，在该方法中释放S
 
 如果目标资源是通过声明式异常处理机制调用时，那么该过滤器将被调用。除此之外，过滤器不会被调用。
 
-### **Listener监听器**
+## **Listener监听器**
 
 listener也就是监听器，一个对象的监听另一个对象，当被监听的对象变化时，监听的对象会执行一系列动作。
 
@@ -898,7 +898,7 @@ public interface HttpSessionActivationListener extends EventListener {     publi
 
 激活和钝化
 
-### servlet异常的处理
+## servlet异常的处理
 
 ​	当一个 Servlet 抛出一个异常时，Web 容器在使用了 exception-type 元素的 **web.xml** 中搜索与抛出异常类型相匹配的配置。
 
@@ -947,7 +947,7 @@ Servlet ErrorHandler 与其他的 Servlet 的定义方式一样，且在 web.xml
 
 
 
-### **Cookie**
+## **Cookie**
 
 服务器脚本向浏览器发送一组 Cookie。例如：姓名、年龄或识别号码等。
 
@@ -1042,65 +1042,360 @@ response.addCookie(cookie);
 
 读取一个现有的 cookie，并把它存储在 Cookie 对象中。
 
-使用 setMaxAge() 方法设置 cookie 的年龄为零，来删除现有的 cookie。
+使用 setMaxAge() 方法设置 cookie 的MaxAge为零，来删除现有的 cookie。
 
 把这个 cookie 添加到响应头。
 
-**Cookie 方法:**
+## Session跟踪
 
-**void setDomain(String pattern)**
+在WEB开发中，服务器可以为每个用户浏览器创建一个会话对象（session对象），注意：一个浏览器独占一个session对象(默认情况下)。因此，在需要保存用户数据时，服务器程序可以把用户数据写到用户浏览器独占的session中，当用户使用浏览器访问其它程序时，其它程序可以从用户的session中取出该用户的数据，为用户服务。
 
-该方法设置 cookie 适用的域
+当服务器创建完session对象后，会把session对象的id以cookie形式返回给客户端。这样，当用户保持当前浏览器的情况下再去访问服务器时，会把session的id传给服务器，服务器根据session的id来为用户提供相应的服务。
 
-**String getDomain()**
+#### 隐藏的表单字段
 
-该方法获取 cookie 适用的域
+一个 Web 服务器可以发送一个隐藏的 HTML 表单字段，以及一个唯一的 session 会话 ID，如下所示：
 
-**void setMaxAge(int expiry)**
+```java
+<input type="hidden" name="sessionid" value="12345">
+```
 
-该方法设置 cookie 过期的时间（以秒为单位）。如果不这样设置，cookie 只会在当前 session 会话中持续有效。
+该条目意味着，当表单被提交时，指定的名称和值会被自动包含在 GET 或 POST 数据中。每次当 Web 浏览器发送回请求时，session_id 值可以用于保持不同的 Web 浏览器的跟踪。
 
-​	
-
-**int getMaxAge()**
-
-该方法返回 cookie 的最大生存周期（以秒为单位），默认情况下，-1 表示 
-
-cookie 将持续下去，直到浏览器关闭。
-
-**String getName()**
-
-该方法返回 cookie 的名称。名称在创建后不能改变。
-
-**void setValue(String newValue)**
-
-该方法设置与 cookie 关联的值。
-
-**String getValue()**
-
-该方法获取与 cookie 关联的值。
-
-**void setPath(String uri)**
-
-该方法设置 cookie 适用的路径。如果您不指定路径，与当前页面相同目录下的（包括子目录下的）所有 URL 都会返回 cookie。
-
-**String getPath()**
-
-该方法获取 cookie 适用的路径。
-
-**void setSecure(boolean flag)**
-
-该方法设置布尔值，表示 cookie 是否应该只在加密的（即 SSL）连接上发送。
-
-**void setComment(String purpose)**
-
-设置cookie的注释。该注释在浏览器向用户呈现 cookie 时非常有用。
-
-**String getComment()**
-
-获取 cookie 的注释，如果 cookie 没有注释则返回 null。
+这可能是一种保持 session 会话跟踪的有效方式，但是点击常规的超文本链接（<A HREF...>）不会导致表单提交，因此隐藏的表单字段也不支持常规的 session 会话跟踪
 
 
+
+#### URL 重写
+
+您可以在每个 URL 末尾追加一些额外的数据来标识 session 会话，服务器会把该 session 会话标识符与已存储的有关 session 会话的数据相关联。
+
+例如，http://w3cschool.cc/file.htm;sessionid=12345，session 会话标识符被附加为 sessionid=12345，标识符可被 Web 服务器访问以识别客户端。
+
+URL 重写是一种更好的维持 session 会话的方式，它在浏览器不支持 cookie 时能够很好地工作，但是它的缺点是会动态生成每个 URL 来为页面分配一个 session 会话 ID，即使是在很简单的静态 HTML 页面中也会如此。
+
+
+
+下面总结了 HttpSession 对象中可用的几个重要的方法：
+
+| 序号 | 方法 & 描述                                                  |
+| :--- | :----------------------------------------------------------- |
+| 1    | **public Object getAttribute(String name)** 该方法返回在该 session 会话中具有指定名称的对象，如果没有指定名称的对象，则返回 null。 |
+| 2    | **public Enumeration getAttributeNames()** 该方法返回 String 对象的枚举，String 对象包含所有绑定到该 session 会话的对象的名称。 |
+| 3    | **public long getCreationTime()** 该方法返回该 session 会话被创建的时间，自格林尼治标准时间 1970 年 1 月 1 日午夜算起，以毫秒为单位。 |
+| 4    | **public String getId()** 该方法返回一个包含分配给该 session 会话的唯一标识符的字符串。 |
+| 5    | **public long getLastAccessedTime()** 该方法返回客户端最后一次发送与该 session 会话相关的请求的时间自格林尼治标准时间 1970 年 1 月 1 日午夜算起，以毫秒为单位。 |
+| 6    | **public int getMaxInactiveInterval()** 该方法返回 Servlet 容器在客户端访问时保持 session 会话打开的最大时间间隔，以秒为单位。 |
+| 7    | **public void invalidate()** 该方法指示该 session 会话无效，并解除绑定到它上面的任何对象。 |
+| 8    | **public boolean isNew()** 如果客户端还不知道该 session 会话，或者如果客户选择不参入该 session 会话，则该方法返回 true。 |
+| 9    | **public void removeAttribute(String name)** 该方法将从该 session 会话移除指定名称的对象。 |
+| 10   | **public void setAttribute(String name, Object value)** 该方法使用指定的名称绑定一个对象到该 session 会话。 |
+| 11   | **public void setMaxInactiveInterval(int interval)** 该方法在 Servlet 容器指示该 session 会话无效之前，指定客户端请求之间的时间，以秒为单位。 |
+
+#### session和cookie的区别
+
+- session是服务端存储，cookie是浏览器端存储
+- Cookie是把用户的数据写给用户的浏览器。
+- Session技术把用户的数据写到用户独占的session中。
+- Session对象由服务器创建，开发人员可以调用request对象的getSession方法得到session对象。
+
+
+
+## 处理日期
+
+基本的日期方法：
+
+| 序号 | 方法 & 描述                                                  |
+| :--- | :----------------------------------------------------------- |
+| 1    | **boolean after(Date date)** 如果调用的 Date 对象中包含的日期在 date 指定的日期之后，则返回 true，否则返回 false。 |
+| 2    | **boolean before(Date date)** 如果调用的 Date 对象中包含的日期在 date 指定的日期之前，则返回 true，否则返回 false。 |
+| 3    | **Object clone( )** 重复调用 Date 对象。                     |
+| 4    | **int compareTo(Date date)** 把调用对象的值与 date 的值进行比较。如果两个值是相等的，则返回 0。如果调用对象在 date 之前，则返回一个负值。如果调用对象在 date 之后，则返回一个正值。 |
+| 5    | **int compareTo(Object obj)** 如果 obj 是 Date 类，则操作等同于 compareTo(Date)。否则，它会抛出一个 ClassCastException。 |
+| 6    | **boolean equals(Object date)** 如果调用的 Date 对象中包含的时间和日期与 date 指定的相同，则返回 true，否则返回 false。 |
+| 7    | **long getTime( )** 返回 1970 年 1 月 1 日以来经过的毫秒数。 |
+| 8    | **int hashCode( )** 为调用对象返回哈希代码。                 |
+| 9    | **void setTime(long time)** 设置 time 指定的时间和日期，这表示从 1970 年 1 月 1 日午夜以来经过的时间（以毫秒为单位）。 |
+| 10   | **String toString( )** 转换调用的 Date 对象为一个字符串，并返回结果。 |
+
+在 Java Servlet 中获取当前的日期和时间是非常容易的。您可以使用一个简单的 Date 对象的 *toString()* 方法来输出当前的日期和时间，
+
+### 日期比较
+
+正如上面所提到的，您可以在 Servlet 中使用所有可用的 Java 方法。如果您需要比较两个日期，以下是方法：
+
+- 您可以使用 getTime() 来获取两个对象自 1970 年 1 月 1 日午夜以来经过的时间（以毫秒为单位），然后对这两个值进行比较。
+- 您可以使用方法 before( )、after( ) 和 equals( )。由于一个月里 12 号在 18 号之前，例如，new Date(99, 2, 12).before(new Date (99, 2, 18)) 返回 true。
+- 您可以使用 compareTo( ) 方法，该方法由 Comparable 接口定义，由 Date 实现。
+
+### 使用 SimpleDateFormat 格式化日期
+
+SimpleDateFormat 是一个以语言环境敏感的方式来格式化和解析日期的具体类。 SimpleDateFormat 允许您选择任何用户定义的日期时间格式化的模式。
+
+### 简单的日期格式的格式代码
+
+使用事件模式字符串来指定时间格式。在这种模式下，所有的 ASCII 字母被保留为模式字母，这些字母定义如下：
+
+| 字符 | 描述                          | 实例                    |
+| :--- | :---------------------------- | :---------------------- |
+| G    | Era 指示器                    | AD                      |
+| y    | 四位数表示的年                | 2001                    |
+| M    | 一年中的月                    | July 或 07              |
+| d    | 一月中的第几天                | 10                      |
+| h    | 带有 A.M./P.M. 的小时（1~12） | 12                      |
+| H    | 一天中的第几小时（0~23）      | 22                      |
+| m    | 一小时中的第几分              | 30                      |
+| s    | 一分中的第几秒                | 55                      |
+| S    | 毫秒                          | 234                     |
+| E    | 一周中的星期几                | Tuesday                 |
+| D    | 一年中的第几天                | 360                     |
+| F    | 所在的周是这个月的第几周      | 2 (second Wed. in July) |
+| w    | 一年中的第几周                | 40                      |
+| W    | 一月中的第几周                | 1                       |
+| a    | A.M./P.M. 标记                | PM                      |
+| k    | 一天中的第几小时（1~24）      | 24                      |
+| K    | 带有 A.M./P.M. 的小时（0~11） | 10                      |
+| z    | 时区                          | Eastern Standard Time   |
+| '    | Escape for text               | Delimiter               |
+| "    | 单引号                        | `                       |
+
+## **网页重定向**
+
+当文档移动到新的位置，我们需要向客户端发送这个新位置时，我们需要用到网页重定向。当然，也可能是为了负载均衡，或者只是为了简单的随机，这些情况都有可能用到网页重定向。
+
+```java
+//重定向方法
+resp.sendRedirect("url");
+```
+
+也可以用修改头信息的方式进行重定向
+
+```java
+//设置状态码
+resp.setStatus(resp.SC_MOVED_TEMPORARILY);
+//把头信息的loaction更改
+resp.setHeader("Location","url");
+```
+
+## 方法
+
+### 点击计数器
+
+```java
+public class Visits implements Filter {
+    private Integer count;
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        count = 0;
+    }
+
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+         count++;
+        System.out.println("访问次数"+count);
+        //请求返回给过滤链
+        filterChain.doFilter(servletRequest, servletResponse);
+    }
+
+    @Override
+    public void destroy() {
+
+    }
+```
+
+### 自动刷新页面
+
+```java
+  @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // 设置刷新自动加载的事件间隔为 1 秒
+        resp.setIntHeader("Refresh", 1);
+
+        // 设置响应内容类型
+        Character.characterEncoding(req, resp, "text/html");
+        // 获取当前计算机时间
+        Calendar calendar = new GregorianCalendar();
+        String am_pm;
+        int year = calendar.get(Calendar.YEAR);
+        //月从0开始要加一
+        int month = calendar.get(Calendar.MONTH) + 1;
+        String week = weekToString(calendar.get(Calendar.DAY_OF_WEEK));
+        int date = calendar.get(Calendar.DATE);
+        int hour = calendar.get(Calendar.HOUR);
+        String minute = AddZero(calendar.get(Calendar.MINUTE));
+        String second = AddZero(calendar.get(Calendar.SECOND));
+        //等于零为上午 不等0为下午
+        if (calendar.get(Calendar.AM_PM) == 0)
+            am_pm = "上午";
+        else am_pm = "下午";
+
+        String AD = year + "年" + month + "月" + date + "天" + "星期" + week;
+
+        String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+
+        PrintWriter out = resp.getWriter();
+        String title = "使用 Servlet 自动刷新页面";
+        String docType = "<!DOCTYPE html> \n";
+        out.println(docType +
+                "<html>\n" +
+                "<head><title>" + title + "</title></head>\n" +
+                "<body bgcolor=\"#f0f0f0\">\n" +
+                "<h1 align=\"center\">" + title + "</h1>\n" +
+                "<h2 align='center'>日期：" + AD  + "</h2>\n"+
+                "<h2 align='center'> "+ CT + "</h2>\n"
+        );
+    }
+
+    public String weekToString(int week) {
+        switch (week) {
+            case 1 -> {
+                return "日";
+            }
+            case 2 -> {
+                return "一";
+
+            }
+            case 3 -> {
+                return "二";
+            }
+            case 4 -> {
+                return "三";
+            }
+            case 5 -> {
+                return "四";
+            }
+            case 6 -> {
+                return "五";
+
+            }
+            case 7 -> {
+                return "六";
+            }
+            default -> {
+                return null;
+            }
+        }
+    }
+    public  String AddZero(int ins){
+        if (ins<10){
+            return "0"+ins;
+        }else {
+            return ""+ins;
+        }
+
+    }
+```
+
+## Servlet 调试
+
+测试/调试 Servlet 始终是开发使用过程中的难点。Servlet 往往涉及大量的客户端/服务器交互，可能会出现错误但又难以重现。
+
+这里有一些提示和建议，可以帮助您调试。
+
+### System.out.println()
+
+System.out.println() 是作为一个标记来使用的，用来测试一段特定的代码是否被执行。我们也可以打印出变量的值。此外：
+
+- 由于 System 对象是核心 Java 对象的一部分，它可以在不需要安装任何额外类的情况下被用于任何地方。这包括 Servlet、JSP、RMI、EJB's、普通的 Beans 和类，以及独立的应用程序。
+- 与在断点处停止不同，写入到 System.out 不会干扰到应用程序的正常执行流程，这使得它在时序是至关重要的时候显得尤为有价值。
+
+下面是使用 System.out.println() 的语法：
+
+```
+System.out.println("Debugging message");
+```
+
+通过上面的语法生成的所有消息将被记录在 Web 服务器日志文件中。
+
+### 消息日志
+
+使用适当的日志记录方法来记录所有调试、警告和错误消息，这是非常好的想法，推荐使用 [log4J](https://logging.apache.org/log4j/2.0/download.html) 来记录所有的消息。
+
+Servlet API 还提供了一个简单的输出信息的方式，使用 log() 方法，如下所示：
+
+```java
+// 导入必需的 java 库
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class ContextLog extends HttpServlet {
+  public void doGet(HttpServletRequest request, 
+      HttpServletResponse response) throws ServletException,
+         java.io.IOException {
+    
+      String par = request.getParameter("par1");
+      // 调用两个 ServletContext.log 方法
+      ServletContext context = getServletContext( );
+
+      if (par == null || par.equals(""))
+      // 通过 Throwable 参数记录版本
+      context.log("No message received:",
+          new IllegalStateException("Missing parameter"));
+      else
+          context.log("Here is the visitor's message: " + par);
+      
+      response.setContentType("text/html;charset=UTF-8");
+      java.io.PrintWriter out = response.getWriter( );
+      String title = "Context Log";
+      String docType = "<!DOCTYPE html> \n";
+      out.println(docType +
+        "<html>\n" +
+        "<head><title>" + title + "</title></head>\n" +
+        "<body bgcolor=\"#f0f0f0\">\n" +
+        "<h1 align=\"center\">" + title + "</h1>\n" +
+        "<h2 align=\"center\">Messages sent</h2>\n" +
+        "</body></html>");
+    } //doGet
+}
+```
+
+ServletContext 把它的文本消息记录到 Servlet 容器的日志文件中。对于 Tomcat，这些日志可以在 <Tomcat-installation-directory>/logs 目录中找到。
+
+这些日志文件确实对新出现的错误或问题的频率给出指示。正因为如此，建议在通常不会发生的异常的 catch 子句中使用 log() 函数。
+
+### 使用 JDB 调试器
+
+您可以使用调试 applet 或应用程序的 jdb 命令来调试 Servlet。
+
+为了调试一个 Servlet，我们可以调试 sun.servlet.http.HttpServer，然后把它看成是 HttpServer 执行 Servlet 来响应浏览器端的 HTTP 请求。这与调试 applet 小程序非常相似。与调试 applet 不同的是，实际被调试的程序是 sun.applet.AppletViewer。
+
+大多数调试器会自动隐藏如何调试 applet 的细节。同样的，对于 servlet，您必须帮调试器执行以下操作：
+
+- 设置您的调试器的类路径 classpath，以便它可以找到 sun.servlet.http.Http-Server 和相关的类。
+- 设置您的调试器的类路径 classpath，以便它可以找到您的 servlet 和支持的类，通常是在 server_root/servlets 和 server_root/classes 中。
+
+您通常不会希望 server_root/servlets 在您的 classpath 中，因为它会禁用 servlet 的重新加载。但是这种包含规则对于调试是非常有用的。它允许您的调试器在 HttpServer 中的自定义 Servlet 加载器加载 Servlet 之前在 Servlet 中设置断点。
+
+如果您已经设置了正确的类路径 classpath，就可以开始调试 sun.servlet.http.HttpServer。可以在您想要调试的 Servlet 代码中设置断点，然后通过 Web 浏览器使用给定的 Servlet（http://localhost:8080/servlet/ServletToDebug）向 HttpServer 发出请求。您会看到程序执行到断点处会停止。
+
+### Servlet 国际化
+
+三个重要术语：
+
+- **国际化（i18n）：**这意味着一个网站提供了不同版本的翻译成访问者的语言或国籍的内容。
+- **本地化（l10n）：**这意味着向网站添加资源，以使其适应特定的地理或文化区域，例如网站翻译成印地文（Hindi）。
+- **区域设置（locale）：**这是一个特殊的文化或地理区域。它通常指语言符号后跟一个下划线和一个国家符号。例如 "en_US" 表示针对 US 的英语区域设置。
+
+Servlet 可以根据请求者的区域设置拾取相应版本的网站，并根据当地的语言、文化和需求提供相应的网站版本。以下是 request 对象中返回 Locale 对象的方法。
+
+```java
+java.util.Locale request.getLocale() 
+```
+
+## 检测区域设置
+
+下面列出了重要的区域设置方法，您可以使用它们来检测请求者的地理位置、语言和区域设置。下面所有的方法都显示了请求者浏览器中设置的国家名称和语言名称。
+
+| 序号 | 方法 & 描述                                                  |
+| :--- | :----------------------------------------------------------- |
+| 1    | **String getCountry()** 该方法以 2 个大写字母形式的 ISO 3166 格式返回该区域设置的国家/地区代码。 |
+| 2    | **String getDisplayCountry()** 该方法返回适合向用户显示的区域设置的国家的名称。 |
+| 3    | **String getLanguage()** 该方法以小写字母形式的 ISO 639 格式返回该区域设置的语言代码。 |
+| 4    | **String getDisplayLanguage()** 该方法返回适合向用户显示的区域设置的语言的名称。 |
+| 5    | **String getISO3Country()** 该方法返回该区域设置的国家的三个字母缩写。 |
+| 6    | **String getISO3Language()** 该方法返回该区域设置的语言的三个字母的缩写。 |
 
 
 
@@ -1120,7 +1415,7 @@ uri与url的区别
 
 apache和tomcat有什么不同
 
-
+ jsp 和 freemaker 
 
 
 

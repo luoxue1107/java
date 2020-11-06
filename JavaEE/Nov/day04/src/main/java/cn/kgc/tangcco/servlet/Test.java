@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 
 /**
  * @author 李庆华
@@ -24,13 +25,19 @@ public class Test extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Character.characterEncoding(req,resp,"text/html");
-        Cookie cookie = new Cookie("id", "password");
-        cookie.setDomain("");
-        cookie.setComment("idAndPassword");
-        cookie.setMaxAge(60);
-        cookie.setValue("newValue");
+        Cookie id = new Cookie("id",req.getParameter("name"));
+        Cookie password = new Cookie("password",req.getParameter("password"));
+        id.setDomain("");
+        id.setComment("id");
+        id.setMaxAge(60);
+        id.setValue("id");
 
-        resp.addCookie(cookie);
+        password.setDomain("");
+        password.setComment("password");
+        password.setMaxAge(60);
+        password.setValue("password");
+        resp.addCookie(id);
+        resp.addCookie(password);
 
         PrintWriter out = resp.getWriter();
         String title = "设置 Cookie 实例";
@@ -44,7 +51,7 @@ public class Test extends HttpServlet {
                 "  <li><b>站点名：</b>："
                 + req.getParameter("name") + "\n</li>" +
                 "  <li><b>站点 URL：</b>："
-                + req.getParameter("url") + "\n</li>" +
+                + req.getParameter("password") + "\n</li>" +
                 "</ul>\n" +
                 "</body></html>");
     }

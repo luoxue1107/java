@@ -36,6 +36,10 @@
         <fastjson.version>1.2.74</fastjson.version>
         <zxing.version>3.4.1</zxing.version>
         <kaptcha.version>2.3.2</kaptcha.version>
+        <mysql.version>8.0.22</mysql.version>
+        <javaee-api.version>8.0.1</javaee-api.version>
+        <jstl.vserion>1.2</jstl.vserion>
+        <jsp-api.vserion>2.2</jsp-api.vserion>
     </properties>
 
     <dependencies>
@@ -141,19 +145,14 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.22</version>
+            <version>${mysql.version}</version>
         </dependency>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>8.0.1</version>
-            <scope>test</scope>
-        </dependency>
+
         <!--jsp依赖-->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
-            <version>2.2</version>
+            <version>${jsp-api.vserion}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -161,7 +160,14 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
-            <version>1.2</version>
+            <version>${jstl.vserion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>${javaee-api.version}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
@@ -243,7 +249,7 @@
                     <!-- tomcat热部署 -->
                     <username>luo</username>
                     <password>123456</password>
-                    <url>http://192.168.100.168:8080/manager/text</url>
+                    <url>http://192.168.241.140:80/manager/text</url>
                 </configuration>
             </plugin>
             <!-- jetty插件 -->

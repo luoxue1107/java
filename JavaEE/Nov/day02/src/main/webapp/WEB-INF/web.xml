@@ -5,7 +5,7 @@
          version="4.0">
     <!--  Listener 监视 -->
     <listener>
-        <listener-class>cn.kgc.tangcco.Listener.Listener</listener-class>
+        <listener-class>cn.kgc.tangcco.listener.Listener</listener-class>
     </listener>
     <!-- servlet -->
     <servlet>
