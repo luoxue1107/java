@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="day07" />
         <module name="day02" />
         <module name="day04" />
       </profile>
@@ -15,6 +16,7 @@
       <module name="day" target="1.8" />
       <module name="day02" target="14" />
       <module name="day04" target="14" />
+      <module name="day07" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>
