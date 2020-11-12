@@ -1,6 +1,7 @@
 package cn.kgc.dao.impl;
 
 import cn.kgc.dao.EmpAndRolDao;
+import cn.kgc.pojo.EmpAndRol;
 import cn.kgc.pojo.Role;
 import cn.kgc.util.jdbc.JdbcUtil;
 
@@ -19,7 +20,7 @@ public class EmpAndRolDaoImpl implements EmpAndRolDao {
     public int[] insertEmpAndRol(Integer eid, Integer[] Rids) {
         Integer length = Rids.length;
 
-        JdbcUtil jdbcUtil =new JdbcUtil();
+        JdbcUtil jdbcUtil = new JdbcUtil();
 
         Integer[][] params = new Integer[length][2];
 
@@ -42,17 +43,16 @@ public class EmpAndRolDaoImpl implements EmpAndRolDao {
     public List<Integer> selectRidsByEid(Integer eid) {
         List<Integer> Rids = new ArrayList<>();
 
-        String sql = "select * from EmpAndRol where sid = ?";
+        String sql = "select * from EmpAndRol where eid = ?";
 
         JdbcUtil jdbcUtil = new JdbcUtil();
 
         ResultSet resultSet = jdbcUtil.executeQuery(sql, eid);
 
         try {
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 Rids.add(resultSet.getInt("rid"));
             }
-
             return Rids;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -63,35 +63,57 @@ public class EmpAndRolDaoImpl implements EmpAndRolDao {
     }
 
     @Override
-    public Integer deleteRoleByEid(Integer eid) {
-        return null;
+    public Integer deleteEmpAndRolByEid(Integer eid) {
+        JdbcUtil jdbcUtil = new JdbcUtil();
+        String sql = "delete from EmpAndRol where eid = ?";
+        Integer status = jdbcUtil.executeUpdate(sql, eid);
+
+        jdbcUtil.close();
+
+        return status;
     }
 
     @Override
     public List<Role> selectRoleByEid(Integer eid) {
         List<Role> roleList = new ArrayList<>();
 
-        String sql = "select r.* from Role as r,EmpAndRol as er  where r.id=er.rid and er.eid = ?";
+        String sql = "select r.id as id, r.name as name  from role as r,EmpAndRol as er  where r.id=er.rid and er.eid = ?";
 
         JdbcUtil jdbcUtil = new JdbcUtil();
 
         ResultSet resultSet = jdbcUtil.executeQuery(sql, eid);
 
         try {
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
-                roleList.add(new Role(id,name));
+                roleList.add(new Role(id, name));
             }
-
             return roleList;
         } catch (SQLException e) {
             e.printStackTrace();
-
-            return null;
-        }
-        finally {
+        } finally {
             jdbcUtil.close();
         }
+        return null;
+    }
+
+    @Override
+    public List<EmpAndRol> selectAllEmpAndRol() {
+        JdbcUtil jdbcUtil = new JdbcUtil();
+        String sql = "select * from EmpAndRol";
+        ResultSet resultSet = jdbcUtil.executeQuery(sql);
+        List<EmpAndRol> earList = new ArrayList<EmpAndRol>();
+        try {
+            while (resultSet.next()) {
+                earList.add(new EmpAndRol(resultSet.getInt("eid"), resultSet.getInt("rid")));
+            }
+            return earList;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }finally {
+            jdbcUtil.close();
+        }
+        return null;
     }
 }

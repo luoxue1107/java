@@ -1,5 +1,7 @@
 package cn.kgc.pojo;
 
+import java.util.List;
+
 /**
  * @author 李庆华
  * @Description 员工信息类
@@ -10,14 +12,27 @@ public class Employee {
     private String name;
     private Integer cid;
     private String cname;
+    private List<String> rnames;
 
     public Employee(Integer id, String name, Integer cid) {
+        this(name,cid);
         this.id = id;
+
+    }
+    public Employee(String name, Integer cid) {
         this.name = name;
         this.cid = cid;
+
+    }
+    public Employee() {
     }
 
-    public Employee() {
+    public List<String> getRnames() {
+        return rnames;
+    }
+
+    public void setRnames(List<String> rnames) {
+        this.rnames = rnames;
     }
 
     public Integer getCid() {

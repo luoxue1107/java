@@ -2,6 +2,8 @@ package cn.kgc.dao;
 
 
 import cn.kgc.pojo.Employee;
+
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 
 /**
@@ -10,6 +12,9 @@ import java.util.List;
  * @date 2020/11/7 13:44
  */
 public interface EmployeeDao {
-    public List<Employee> selectAllEmployee();
-    public Integer insertEmployee( Employee employee);
+    List<Employee> selectAllEmployee(Integer initial, Integer length);
+    Integer insertEmployee( Employee employee);
+    Integer deleteEmployee(Integer id);
+    Integer updateEmployee(Employee employee);
+    Employee selectEmployeeById(Integer id);
 }

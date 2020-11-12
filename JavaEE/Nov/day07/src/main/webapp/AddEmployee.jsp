@@ -15,31 +15,25 @@
 </head>
 <link href="css/bootstrap.min.css"  type="text/css" rel="stylesheet">
 <body>
-<div align="center" style="padding-top:30px" >
+<div class="row-cols-1" align="center" style="padding-top:30px" >
     <h3>添加员工</h3>
+    <hr width="60%">
     <form action="${pageContext.request.contextPath}/AddEmployee" method="post">
-        <div class="col-lg-12">
-        <hr width="40%">
+        <div class="col-lg-6">
         姓 名：<input type="text" name="name" value="" style="height:22px;width: 100px">
         </div>
-        <hr width="40%">
-        <div class="col-lg-12">
+        <hr width="60%">
+        <div class="col-lg-6">
         公 司：<select name="cid" style="width:100px;height:22px">
         <c:forEach items="${companyList}" var="r">
-        <option value="${r.id}">${r.name}
+            <option value="${r.id}">${r.name}</option>
             </c:forEach>
-    </select>
+        </select>
         </div>
-        <hr width="40%">
-        <div class="col-lg-12">
-        职 位：<select name="rid" style="width:100px;height:22px">
-        <c:forEach items="${roleList}" var="r">
-        <option value="${r.id}">${r.name}
-            </c:forEach>
-    </select>
-        </div>
-        <hr width="40%">
+        <hr width="60%">
+        <div class="col-lg-6">
         <input type="submit" value="注册用户">
+        </div>
     </form>
 </div>
 </body>

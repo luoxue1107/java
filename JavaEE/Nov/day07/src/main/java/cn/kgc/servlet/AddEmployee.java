@@ -23,14 +23,16 @@ public class AddEmployee extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServiceEmployeeImpl serviceEmployee= new ServiceEmployeeImpl();
-        ServiceEmpAndRolImpl serviceEmpAndRol =new ServiceEmpAndRolImpl();
-        String rid = req.getParameter("rid");
-        Employee employee = new Employee();
-        employee.setName(req.getParameter("name"));
-        employee.setCid(Integer.valueOf(req.getParameter("cid")));
-        serviceEmployee.addEmployee(employee);
-        serviceEmpAndRol.addEmpAndRol(req.getParameter("id"),)
-
-
+        Integer integer = serviceEmployee.addEmployee(new Employee(
+                req.getParameter("name"),
+                Integer.valueOf(req.getParameter("cid"))));
+        String contextPath = req.getContextPath();
+        if (integer>0){
+            System.out.println("添加成功");
+            resp.sendRedirect(contextPath+"/login.do");
+        }else {
+            System.out.println("添加失败");
+            resp.sendRedirect(contextPath+"/login.do");
+        }
     }
 }

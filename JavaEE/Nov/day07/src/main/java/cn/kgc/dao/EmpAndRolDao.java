@@ -1,5 +1,6 @@
 package cn.kgc.dao;
 
+import cn.kgc.pojo.EmpAndRol;
 import cn.kgc.pojo.Role;
 
 import java.util.List;
@@ -14,7 +15,9 @@ public interface EmpAndRolDao {
 
     List<Integer> selectRidsByEid(Integer eid);
 
-    Integer deleteRoleByEid(Integer eid);
+    Integer deleteEmpAndRolByEid(Integer eid);
 
     List<Role> selectRoleByEid(Integer eid);
+
+    List<EmpAndRol> selectAllEmpAndRol();
 }

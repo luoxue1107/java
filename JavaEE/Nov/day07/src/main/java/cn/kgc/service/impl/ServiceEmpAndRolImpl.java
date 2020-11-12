@@ -12,35 +12,42 @@ import java.util.List;
  * @date 2020/11/8 17:04
  */
 public class ServiceEmpAndRolImpl implements ServiceEmpAndRol {
+
+    private EmpAndRolDaoImpl er = new EmpAndRolDaoImpl();
+
     @Override
     public Integer addEmpAndRol(Integer eid, Integer[] Rids) {
-        EmpAndRolDaoImpl er=new EmpAndRolDaoImpl();
         Integer result = 1;
 
-        int[] ints = er.insertEmpAndRol(eid,Rids);
+        int[] ints = er.insertEmpAndRol(eid, Rids);
 
-        //若有一条插入失败则视为选课失败
-        for (int i : ints) {
-            if (ints[i] <= 0) {
-                result = 0;
+        if(ints.length==0) {
+            result=0;
+        }else {
+            for (int i : ints) {
+                if (ints[i] > 0) {
+                    result = 1;
+                }else {
+                    result = 0;
+                }
             }
         }
-
         return result;
     }
 
     @Override
     public List<Integer> getRidsByEid(Integer eid) {
-        return null;
+       return er.selectRidsByEid(eid);
     }
 
     @Override
     public Integer delRoleByEid(Integer eid) {
-        return null;
+        return er.deleteEmpAndRolByEid(eid);
     }
 
     @Override
     public List<Role> getRoleByEid(Integer eid) {
-        return null;
+        return  er.selectRoleByEid(eid);
+
     }
 }

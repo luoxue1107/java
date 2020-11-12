@@ -11,7 +11,7 @@ public class JdbcUtil {
     //驱动器
     public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     //URL
-    public static final String URL = "jdbc:mysql://192.168.242.15/2020_11_07";
+    public static final String URL = "jdbc:mysql://192.168.53.39/2020_11_07";
     //用户
     public static final String USER = "root";
     //密码

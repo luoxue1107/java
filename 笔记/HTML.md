@@ -823,3 +823,120 @@ createEvent()
 getContext()	 
 
 toDataURL()	
+
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+
+<body>
+    <form action="" method="">
+
+        <!-- 定义拾色器。 -->
+        <input type="color" name="color" value="color">
+        <br>
+
+        <!-- 定义隐藏输入字段。 -->
+        <input type="hidden" name="hidden" value="hidden">
+        <br>
+
+        <!-- 定义用于 e-mail 地址的字段。 -->
+        <input type="email" name="email" value="email">
+        <br>
+
+        <!-- 定义图像作为提交按钮。 -->
+        <input type="inage" name="inage" value="inage">
+        <br>
+
+        <!-- 定义用于输入数字的字段。 -->
+        <input type="number" name="number" value="123">
+        <br>
+
+        <!-- 定义密码字段（字段中的字符会被遮蔽）。 -->
+        <input type="password" name="password" value="123">
+        <br>
+
+        <!-- 定义用于输入搜索字符串的文本字段。 -->
+        <input type="search" name="search" value="搜索">
+        <br>
+
+        <!-- 定义用于输入电话号码的字段。 -->
+        <input type="tel" name="tel" value="电话">
+        <br>
+
+        <!-- <br>默认。定义一个单行的文本字段（默认宽度为 20 个字符）。 -->
+        <input type="text" name="text" value="文本">
+        <br>
+
+        <!-- 定义用于输入时间的控件（不带时区）。 -->
+        <input type="time" name="time">
+        <br>
+
+        <!-- 定义 month 和 year 控件（不带时区）。 -->
+        <input type="month" name="month" value="month">
+        <br>
+
+        <!-- 定义用于输入 URL 的字段。 -->
+        <input type="url" name="time" value="URL">
+        <br>
+
+        <!-- 定义 date 控件（包括年、月、日，不包括时间）。 -->
+        <input type="date" name="date" value="date">
+        <br>
+
+        <!-- 定义 date 控件（包括年、月、日，不包括时间）。 -->
+        <input type="datetime" name="datetime" value="datetime">
+        <br>
+
+        <!-- 定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，不带时区）。 -->
+        <input type="datetime-local" name="datetime-local" value="datetime-local">
+        <br>
+
+        <!-- 定义 week 和 year 控件（不带时区）。 -->
+        <input type="week" name="week" value="">
+        <br>
+
+        <!-- 定义用于精确值不重要的输入数字的控件（比如 slider 控件）。 -->
+        <input type="range" name="range" value="range">
+        <br>
+
+        <!-- 定义复选框。 -->
+        <input type="checkbox" name="checkbox" value="checkbox">
+        <br>
+
+        <!-- 定义单选按钮。 -->
+        <input type="radio" name="radio" value="radio">
+        <br>
+
+        <!-- 定义文件选择字段和 "浏览..." 按钮，供文件上传。 -->
+        <input type="file" name="file" value="file">
+        <br>
+
+        <!-- 定义可点击的按钮（通常与 JavaScript 一起使用来启动脚本）。 -->
+        <input type="button" name="button" value="button">
+        <br>
+
+        <!-- 定义重置按钮（重置所有的表单值为默认值）。 -->
+        <input type="reset" name="reset" value="重置">
+        <br>
+
+        <!-- 定义提交按钮。 -->
+        <input type="submit">
+
+
+
+
+
+    </form>
+</body>
+
+</html>
+```
+

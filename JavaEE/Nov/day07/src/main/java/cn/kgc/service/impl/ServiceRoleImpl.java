@@ -17,4 +17,24 @@ public class ServiceRoleImpl implements ServiceRole {
     public List<Role> getRole() {
         return role.selectAllRile();
     }
+
+    @Override
+    public Role getRoleById(Integer id) {
+        return role.selectRoleById(id);
+    }
+
+    @Override
+    public Integer addOneRole(Role r) {
+       return role.insertOneRole(r);
+    }
+
+    @Override
+    public Integer setOneRole(Role r) {
+        return role.updateOneRole(r);
+    }
+
+    @Override
+    public Integer deleteRoleById(Integer id) {
+        return role.deleteRoleById(id);
+    }
 }

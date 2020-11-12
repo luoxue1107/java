@@ -11,4 +11,12 @@ import java.util.List;
  */
 public interface ServiceRole {
     List<Role> getRole();
+
+    Role getRoleById(Integer id);
+
+    Integer addOneRole(Role role);
+
+    Integer setOneRole(Role role);
+
+    Integer deleteRoleById(Integer id);
 }

@@ -1,18 +1,16 @@
 package cn.kgc.servlet;
 
 import cn.kgc.pojo.Employee;
-import cn.kgc.service.ServiceRole;
-import cn.kgc.service.impl.ServiceCompanyImpl;
-import cn.kgc.service.impl.ServiceEmployeeImpl;
-import cn.kgc.service.impl.ServiceRoleImpl;
 
-import javax.servlet.ServletException;
+import cn.kgc.pojo.Page;
+import cn.kgc.service.impl.ServiceEmployeeImpl;
+import cn.kgc.service.impl.ServicePageImpl;
+
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.List;
+import javax.servlet.http.*;
+import java.io.*;
+import java.util.*;
 
 /**
  * @author 李庆华
@@ -25,10 +23,17 @@ public class ServletLogin  extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ServiceEmployeeImpl serviceEmployee= new ServiceEmployeeImpl();
-
-        List<Employee> employeeList = serviceEmployee.getEmployee();
-        req.setAttribute("employeeList",employeeList);
+        List<Employee> employeeList = new ServiceEmployeeImpl().getEmployee();
+        String page = null;
+        page = req.getParameter("page");
+        if (page == null) {
+            page="1";
+            System.out.println("page空");
+        }
+        Page pages = new ServicePageImpl().getPage(Integer.valueOf(page), 3);
+        req.setAttribute("pages",pages);
+        req.setAttribute("employeeList",pages.getEmployeeList());
         req.getRequestDispatcher("/login.jsp").forward(req, resp);
     }
+
 }
