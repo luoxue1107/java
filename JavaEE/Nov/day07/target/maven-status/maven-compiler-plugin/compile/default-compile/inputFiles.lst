@@ -21,6 +21,7 @@ D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\dao\PageDao.java
 D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\dao\RoleDao.java
 D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\pojo\Role.java
 D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\service\ServicePage.java
+D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\pojo\EmpAndRol.java
 D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\dao\impl\EmployeeDaoImpl.java
 D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\pojo\Company.java
 D:\Items\JavaEE\Nov\day07\src\main\java\cn\kgc\service\ServiceEmpAndRol.java

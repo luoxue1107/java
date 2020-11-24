@@ -1,2 +1,0 @@
-0:0:0:0:0:0:0:1 - - [09/Nov/2020:08:20:27 +0800] "GET /day07/login.do HTTP/1.1" 500 3348 http-bio-80-exec-1 39
-0:0:0:0:0:0:0:1 - - [09/Nov/2020:08:20:27 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-80-exec-2 0

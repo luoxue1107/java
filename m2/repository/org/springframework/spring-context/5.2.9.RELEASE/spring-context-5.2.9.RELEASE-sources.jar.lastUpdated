@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 01:05:54 CST 2020
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1605719154403
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework\:spring-context\:jar\:sources\:5.2.9.RELEASE from/to central (https\://repo.maven.apache.org/maven2)\: GET request of\: org/springframework/spring-context/5.2.9.RELEASE/spring-context-5.2.9.RELEASE-sources.jar from central failed

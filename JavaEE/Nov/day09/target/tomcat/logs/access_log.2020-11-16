@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [16/Nov/2020:11:47:30 +0800] "GET /day09/login.do HTTP/1.1" 500 3387 http-bio-80-exec-2 33
+0:0:0:0:0:0:0:1 - - [16/Nov/2020:11:56:33 +0800] "GET /day09/login.do HTTP/1.1" 500 3388 http-bio-80-exec-1 65
+0:0:0:0:0:0:0:1 - - [16/Nov/2020:11:56:33 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-80-exec-2 0
+0:0:0:0:0:0:0:1 - - [16/Nov/2020:12:00:10 +0800] "GET /day09/login.do HTTP/1.1" 500 3388 http-bio-80-exec-1 36

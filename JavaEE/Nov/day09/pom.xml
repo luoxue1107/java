@@ -163,12 +163,12 @@
             <version>${jstl.vserion}</version>
         </dependency>
 
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>${javaee-api.version}</version>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>javax</groupId>-->
+<!--            <artifactId>javaee-api</artifactId>-->
+<!--            <version>${javaee-api.version}</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -247,9 +247,9 @@
                     <path>/day09</path>
                     <uriEncoding>UTF-8</uriEncoding>
                     <!-- tomcat热部署 -->
-                    <username>luo</username>
+                    <username>admin</username>
                     <password>123456</password>
-                    <url>http://192.168.241.140:80/manager/text</url>
+                    <url>http://192.168.240.154:8080/manager/text</url>
                 </configuration>
             </plugin>
             <!-- jetty插件 -->
@@ -265,7 +265,7 @@
                         <contextPath>/day09</contextPath>
                     </webApp>
                     <httpConnector>
-                        <port>80</port>
+                        <port>8080</port>
                     </httpConnector>
                 </configuration>
             </plugin>

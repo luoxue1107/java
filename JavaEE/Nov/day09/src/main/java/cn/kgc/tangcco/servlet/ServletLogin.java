@@ -18,7 +18,6 @@ import java.util.*;
  * @Description
  * @date 2020/11/11 14:54
  */
-@WebServlet(urlPatterns = "/login.do")
 public class ServletLogin extends HttpServlet {
 
     private static final long serialVersionUID = -7802593609619399239L;

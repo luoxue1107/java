@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 19 15:54:10 CST 2020
+javaee-api-8.0.1.jar>central=
+javaee-api-8.0.1.jar>alimaven=
+javaee-api-8.0.1.pom>alimaven=
+javaee-api-8.0.1.pom>central=

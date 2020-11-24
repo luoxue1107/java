@@ -5,6 +5,9 @@
     <file type="web" url="file://$PROJECT_DIR$/day04" />
     <file type="web" url="file://$PROJECT_DIR$/day07" />
     <file type="web" url="file://$PROJECT_DIR$/day09" />
+    <file type="web" url="file://$PROJECT_DIR$/day18" />
+    <file type="web" url="file://$PROJECT_DIR$/day19" />
+    <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -13,7 +16,10 @@
         <option value="$PROJECT_DIR$/day04/pom.xml" />
         <option value="$PROJECT_DIR$/day07/pom.xml" />
         <option value="$PROJECT_DIR$/day09/pom.xml" />
+        <option value="$PROJECT_DIR$/day19/pom.xml" />
+        <option value="$PROJECT_DIR$/exercise/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

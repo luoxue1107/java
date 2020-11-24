@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="department" class="cn.kgc.pojo.Department">
+        <property name="uid" value="1"/>
+        <property name="name" value="lllll"/>
+    </bean>
+
+    <bean id="department2" class="cn.kgc.pojo.Department">
+       <constructor-arg name="uid" value="2"/>
+        <constructor-arg name="name" value="iiiii"/>
+    </bean>
+</beans>

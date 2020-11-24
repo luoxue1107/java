@@ -247,9 +247,9 @@
                     <path>/day04</path>
                     <uriEncoding>UTF-8</uriEncoding>
                     <!-- tomcat热部署 -->
-                    <username>luo</username>
+                    <username>admin</username>
                     <password>123456</password>
-                    <url>http://192.168.241.140:80/manager/text</url>
+                    <url>http://192.168.240.154:8080/manager/text</url>
                 </configuration>
             </plugin>
             <!-- jetty插件 -->

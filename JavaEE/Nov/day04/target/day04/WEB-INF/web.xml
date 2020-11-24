@@ -3,10 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <filter>
+    <filter-name>visits</filter-name>
+        <filter-class>cn.kgc.tangcco.filter.Visits</filter-class>
+</filter>
+    <filter-mapping>
+        <filter-name>visits</filter-name>
+        <url-pattern>/.do</url-pattern>
+    </filter-mapping>
+<!--    监听器-->
     <listener>
-        <listener-class>cn.kgc.tangcco.Listener.Listener</listener-class>
+        <listener-class>cn.kgc.tangcco.listener.Listener</listener-class>
     </listener>
 <!--    servlet -->
+    <servlet>
+        <servlet-name>Test04</servlet-name>
+        <servlet-class>cn.kgc.tangcco.servlet.Test04</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test04</servlet-name>
+        <url-pattern>/test04</url-pattern>
+    </servlet-mapping>
 <servlet>
     <servlet-name>errorHandler</servlet-name>
     <servlet-class>cn.kgc.tangcco.error.errorHandler</servlet-class>

@@ -12,10 +12,10 @@
 
     <properties>
         <!-- jdk版本 -->
-        <jdk.version>14</jdk.version>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
-        <maven.compiler.compilerVersion>14</maven.compiler.compilerVersion>
+        <jdk.version>1.8</jdk.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <!-- 设置字符编码 -->
         <maven.compiler.encoding>utf-8</maven.compiler.encoding>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -143,12 +143,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.22</version>
         </dependency>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>8.0.1</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>javax</groupId>-->
+<!--            <artifactId>javaee-api</artifactId>-->
+<!--            <version>8.0.1</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <!--jsp依赖-->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>

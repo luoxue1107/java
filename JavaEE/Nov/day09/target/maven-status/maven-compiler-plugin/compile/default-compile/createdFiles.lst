@@ -15,6 +15,7 @@ cn\kgc\tangcco\service\ServicePage.class
 cn\kgc\tangcco\dao\Impl\JournalismDaoImpl.class
 cn\kgc\tangcco\servlet\ServletAddView.class
 cn\kgc\tangcco\service\ServiceJournalism.class
+cn\kgc\tangcco\servlet\Test.class
 cn\kgc\tangcco\servlet\ServletIndex.class
 cn\kgc\tangcco\dao\AuthorDao.class
 cn\kgc\tangcco\pojo\Page.class
