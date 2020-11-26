@@ -1,7 +1,5 @@
 # Spring
 
-IOC
-
 ```
 
 ```
@@ -11,7 +9,7 @@ resources文件夹创建xml类型的Srping配置文件
 在<beans>标签里写<bean>标签
 ```
 
-属性注入:
+## 属性注入:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -41,7 +39,7 @@ resources文件夹创建xml类型的Srping配置文件
 </beans>
 ```
 
-引入命名空间和约束文件
+### 引入命名空间和约束文件
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -61,7 +59,7 @@ resources文件夹创建xml类型的Srping配置文件
 </beans>
 ```
 
-ref:
+### ref:
 
 ```xml
 <baen id="object" class="cn.kgc.Clazz">
@@ -70,7 +68,7 @@ ref:
 </baen>
 ```
 
-  构造函数注入:
+###   构造函数注入:
 
 ```xml
 <bean id="object" class="cn.kgc.Clazz">
@@ -81,7 +79,7 @@ ref:
 </bean>
 ```
 
-对象赋空值:
+### 对象赋空值:
 
 ```xml
 <bean id="object" class="cn.kgc.Clazz">
@@ -93,7 +91,7 @@ ref:
 </bean>
 ```
 
-set集合的存值:
+### set集合的存值:
 
 ```xml
 <bean id="object" class="cn.kgc.Clazz">
@@ -107,7 +105,7 @@ set集合的存值:
 </bean>
 ```
 
-list集合的存值:
+### list集合的存值:
 
 ```xml
 <bean id="object" class="cn.kgc.Clazz">  
@@ -121,7 +119,7 @@ list集合的存值:
 </bean>
 ```
 
-map集合的存值:
+### map集合的存值:
 
 ```xml
 <bean id="object" class="cn.kgc.Clazz"> 
@@ -135,7 +133,7 @@ map集合的存值:
 </bean>
 ```
 
-对象集合的存入:
+### 对象集合的存入:
 
 ```xml
 <bean id="object" class="cn.kgc.Clazz"> 
@@ -148,7 +146,7 @@ map集合的存值:
 </bean>
 ```
 
-对象的获取:
+## 对象的获取:
 
 ```java
 //读取类路径下的配置文件beans.xml
@@ -166,7 +164,7 @@ Student s2 = ctx.getBean("student1", Student.class);
 Student s3 = ctx.getBean(Student.class);
 ```
 
-.properties文件
+## .properties文件
 
 ```properties
 格式:
@@ -180,7 +178,7 @@ clazz2.id=2
 clazz2.name=name
 ```
 
-autowire:自动装配:
+## autowire:自动装配:
 
 ```xml
 <!--
@@ -198,7 +196,7 @@ byType:通过类型自动装配，此类型的对象在配置文件中只能有�
 </bean>
 ```
 
-注解:
+## 注解:
 
 ```java
 //repository：持久层注解，将此对象注册为一个数据库输入输出的组件

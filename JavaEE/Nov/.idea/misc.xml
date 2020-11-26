@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/day09" />
     <file type="web" url="file://$PROJECT_DIR$/day18" />
     <file type="web" url="file://$PROJECT_DIR$/day19" />
+    <file type="web" url="file://$PROJECT_DIR$/day26" />
     <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
@@ -17,7 +18,8 @@
         <option value="$PROJECT_DIR$/day07/pom.xml" />
         <option value="$PROJECT_DIR$/day09/pom.xml" />
         <option value="$PROJECT_DIR$/day19/pom.xml" />
-        <option value="$PROJECT_DIR$/exercise/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/day26/pom.xml" />
       </list>
     </option>
   </component>

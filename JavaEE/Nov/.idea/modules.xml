@@ -3,12 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Nov.iml" filepath="$PROJECT_DIR$/.idea/Nov.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_ioc/Spring_ioc.iml" filepath="$PROJECT_DIR$/Spring_ioc/Spring_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/day02/day02.iml" filepath="$PROJECT_DIR$/day02/day02.iml" />
       <module fileurl="file://$PROJECT_DIR$/day04/day04.iml" filepath="$PROJECT_DIR$/day04/day04.iml" />
       <module fileurl="file://$PROJECT_DIR$/day07/day07.iml" filepath="$PROJECT_DIR$/day07/day07.iml" />
       <module fileurl="file://$PROJECT_DIR$/day09/day09.iml" filepath="$PROJECT_DIR$/day09/day09.iml" />
       <module fileurl="file://$PROJECT_DIR$/day19/day19.iml" filepath="$PROJECT_DIR$/day19/day19.iml" />
-      <module fileurl="file://$PROJECT_DIR$/exercise/exercise.iml" filepath="$PROJECT_DIR$/exercise/exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day26/day26.iml" filepath="$PROJECT_DIR$/day26/day26.iml" />
     </modules>
   </component>
 </project>

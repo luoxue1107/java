@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="cn.kgc"/>
+    <context:property-placeholder location="beans.properties"/>
+    <bean id="clazz" class="cn.kgc.pojo.Clazz">
+        <property name="id" value="1"/>
+        <property name="name" value="java"/>
+        <property name="studentList">
+            <list>
+                <ref bean="student"/>
+                <ref bean="student1"/>
+                <ref bean="student2"/>
+                <ref bean="student3"/>
+                <ref bean="student4"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="student" class="cn.kgc.pojo.Student" autowire="byName">
+        <property name="id" value="0"/>
+        <property name="name" value="name"/>
+        <property name="gender" value="1"/>
+    </bean>
+    <bean id="student1" class="cn.kgc.pojo.Student" autowire="byName">
+        <property name="id" value="1"/>
+        <property name="name" value="name1"/>
+        <property name="gender" value="1"/>
+    </bean>
+    <bean id="student2" class="cn.kgc.pojo.Student" autowire="byName">
+        <property name="id" value="2"/>
+        <property name="name" value="name2"/>
+        <property name="gender" value="1"/>
+    </bean>
+    <bean id="student3" class="cn.kgc.pojo.Student" autowire="byName">
+        <property name="id" value="3"/>
+        <property name="name" value="name3"/>
+        <property name="gender" value="1"/>
+    </bean>
+    <bean id="student4" class="cn.kgc.pojo.Student" autowire="byName">
+        <property name="id" value="4"/>
+        <property name="name" value="name4"/>
+        <property name="gender" value="1"/>
+    </bean>
+
+<!--    <bean id="studentDao" class="cn.kgc.dao.StudentDaoImpl" autowire="byType"/>-->
+
+    <!--    <bean id="clazz02" class="cn.kgc.pojo.Clazz">-->
+    <!--        <constructor-arg name="id" value="2"/>-->
+    <!--        <constructor-arg name="name" value="c++"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="student02" class="cn.kgc.pojo.Student">-->
+    <!--        <constructor-arg name="id" value="2"/>-->
+    <!--        <constructor-arg name="name" value="name2"/>-->
+    <!--        <constructor-arg name="gender" value="0"/>-->
+    <!--        <constructor-arg name="clazz" ref="clazz02"/>-->
+    <!--    </bean>-->
+    <!--    <bean id="clazz03" class="cn.kgc.pojo.Clazz" p:id="3" p:name="name3" />-->
+    <!--    <bean id="clazz04" class="cn.kgc.pojo.Clazz" c:id="4" c:name="name4" />-->
+    <!--    <bean id="student03" class="cn.kgc.pojo.Student" p:id="3" p:name="name3" p:gender="1" p:clazz-ref="clazz03"/>-->
+    <!--    <bean id="student04" class="cn.kgc.pojo.Student" c:id="4" c:name="name4" c:gender="1" c:clazz-ref="clazz04"/>-->
+
+    <!--    <bean id="clazz05" class="cn.kgc.pojo.Clazz" p:id="${Clazz.id}" p:name="${Clazz.name}" />-->
+    <!--    <bean id="student05" class="cn.kgc.pojo.Student" c:id="${Student.id}" c:name="${Student.name}" p:gender="${Student.gender}" c:clazz-ref="clazz05"/>-->
+
+
+</beans>
