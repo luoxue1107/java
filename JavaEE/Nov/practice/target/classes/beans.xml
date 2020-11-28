@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:centext="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+">
+    <centext:component-scan base-package="cn.kgc"/>
+    <bean id="student" class="cn.kgc.pojo.Student">
+        <property name="id" value="1"/>
+        <property name="name" value="大帅逼"/>
+        <property name="clazzList">
+            <list>
+                <ref bean="clazz1"/>
+                <ref bean="clazz2"/>
+                <ref bean="clazz3"/>
+                <ref bean="clazz4"/>
+                <ref bean="clazz5"/>
+                <ref bean="clazz6"/>
+                <ref bean="clazz7"/>
+                <ref bean="clazz8"/>
+
+            </list>
+
+        </property>
+    </bean>
+    <bean id="clazz1" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+    <bean id="clazz2" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+    <bean id="clazz3" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+    <bean id="clazz4" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+    <bean id="clazz5" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+    <bean id="clazz6" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+    <bean id="clazz7" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+    <bean id="clazz8" class="cn.kgc.pojo.Clazz" c:id="1" c:name="lilio"/>
+
+
+
+</beans>

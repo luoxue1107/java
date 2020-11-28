@@ -1,8 +1,6 @@
 # Spring
 
-```
 
-```
 
 ```
 resources文件夹创建xml类型的Srping配置文件
@@ -196,7 +194,23 @@ byType:通过类型自动装配，此类型的对象在配置文件中只能有�
 </bean>
 ```
 
+### component-scan组件扫描:
+
+```xml
+<!--不要忘记添加 context名称空间和约束 xmlns:context="http://www.springframework.org/schema/context"
+
+ xsi:schemaLocation添加约束
+http://www.springframework.org/schema/context      http://www.springframework.org/schema/context/spring-context.xsd"
+      
+component-scan:组件扫描，扫描base-package包下面的所有的注解，自动注册对象-->
+    <context:component-scan base-package="cn.kgc"/>
+```
+
+
+
 ## 注解:
+
+### @Repositor 持久层注解与@Autowired自动装配注解(根据类型装配)
 
 ```java
 //repository：持久层注解，将此对象注册为一个数据库输入输出的组件
@@ -215,6 +229,8 @@ public class StudentDaoImpl implements StudentDao {
 
 ```
 
+### @Service 业务层注解
+
 ```java
 //service:业务层注解，将它注册为一个业务组件
 @Service
@@ -230,14 +246,30 @@ public class StudentServiceImpl implements StudentService {
 
 ```
 
-component-scan组件扫描:
+###  @Qualifier 按名称装配对象
 
-```xml
-<!--不要忘记添加 context名称空间和约束 xmlns:context="http://www.springframework.org/schema/context"
+```java
+@Service
+public class UserServiceImpl implements UserService {
+    //Qualifier:使用某个名称的类型装配
+    @Autowired
+    @Qualifier("userDaoImpl")
+    private UserDao userDao;
 
- xsi:schemaLocation添加约束
-http://www.springframework.org/schema/context      http://www.springframework.org/schema/context/spring-context.xsd"
-      component-scan:组件扫描，扫描base-package包下面的所有的注解，自动注册对象-->
-    <context:component-scan base-package="cn.kgc"/>
+    @Override
+    public List<User> getAllUsers() {
+        return userDao.selectAllUsers();
+    }
+}
+
 ```
 
+ssm 
+
+spring springmvc  mybatis
+
+ssh
+
+spring struts2 hibernate(JPA)
+
+springmvc 封装servlet  替代原servlet

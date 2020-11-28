@@ -8,12 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="day02" />
-        <module name="day09" />
+        <module name="practice" />
+        <module name="Spring_jdbc" />
+        <module name="spring_springmvc" />
+        <module name="Spring_MVC" />
         <module name="Spring_ioc" />
+        <module name="day09" />
         <module name="day19" />
         <module name="day07" />
-        <module name="day04" />
         <module name="day26" />
+        <module name="day04" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,7 +30,14 @@
       <module name="day19" target="1.8" />
       <module name="day26" target="1.8" />
       <module name="exercise" target="1.7" />
+      <module name="practice" target="1.8" />
       <module name="Spring_ioc" target="8" />
+      <module name="Spring_jdbc" target="8" />
+      <module name="Spring_jdbc_1" target="8" />
+      <module name="Spring_MVC" target="1.8" />
+      <module name="spring_springmvc" target="1.8" />
+      <module name="Spring_SpringMVC_jdbc" target="1.7" />
+      <module name="test" target="1.8" />
       <module name="Test" target="1.8" />
       <module name="untitled" target="1.7" />
     </bytecodeTargetLevel>

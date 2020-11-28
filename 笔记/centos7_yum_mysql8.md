@@ -28,5 +28,5 @@ exit
 
 systemctl restart mysqld
 
-# 使用新密码连接
+## 使用新密码连接
 mysql -h 你自己的IP地址 -uroot -p

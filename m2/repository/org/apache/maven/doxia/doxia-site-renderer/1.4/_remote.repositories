@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Nov 19 01:03:18 CST 2020
+#Thu Nov 26 16:30:34 CST 2020
 doxia-site-renderer-1.4.jar>central=
 doxia-site-renderer-1.4.pom>central=
+doxia-site-renderer-1.4.pom>alimaven=
+doxia-site-renderer-1.4.jar>alimaven=

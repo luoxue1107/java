@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    <!-- 自动扫描该包，SpringMVC会将包下用了@controller注解的类注册为Spring的controller -->
+    <context:component-scan base-package="cn.kgc.controller"/>
+    
+    <!-- 启用注解驱动 把component-scan扫描到的注解 进行启动-->
+    <mvc:annotation-driven/>
+    
+    <!-- 使用默认的Servlet来响应静态文件  处理静态资源-->
+    <mvc:default-servlet-handler/>
+    
+    <!-- 视图解析器  -->
+     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+        <property name="prefix" value="/jsp/"/> <!-- 前缀 -->
+        <property name="suffix" value=".jsp"/> <!-- 后缀 -->
+    </bean>
+
+</beans>

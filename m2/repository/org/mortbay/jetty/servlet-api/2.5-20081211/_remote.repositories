@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Nov 19 15:55:07 CST 2020
+#Thu Nov 26 16:30:34 CST 2020
 servlet-api-2.5-20081211.jar>central=
+servlet-api-2.5-20081211.jar>alimaven=
 servlet-api-2.5-20081211.pom>alimaven=
 servlet-api-2.5-20081211.pom>central=

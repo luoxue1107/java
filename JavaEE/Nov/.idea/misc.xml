@@ -8,6 +8,9 @@
     <file type="web" url="file://$PROJECT_DIR$/day18" />
     <file type="web" url="file://$PROJECT_DIR$/day19" />
     <file type="web" url="file://$PROJECT_DIR$/day26" />
+    <file type="web" url="file://$PROJECT_DIR$/practice" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC" />
+    <file type="web" url="file://$PROJECT_DIR$/test" />
     <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
@@ -20,6 +23,10 @@
         <option value="$PROJECT_DIR$/day19/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_ioc/pom.xml" />
         <option value="$PROJECT_DIR$/day26/pom.xml" />
+        <option value="$PROJECT_DIR$/practice/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_SpringMVC_jdbc/Spring_SpringMVC_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC/pom.xml" />
       </list>
     </option>
   </component>
