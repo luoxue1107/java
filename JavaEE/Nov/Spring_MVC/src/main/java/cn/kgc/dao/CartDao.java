@@ -7,6 +7,6 @@ package cn.kgc.dao;
  */
 public interface CartDao {
     Integer[] deleteCartById(Integer[] integers);
-    Integer updateCart(Integer[] inters);
+    Integer updateCartNumber(Integer[] inters);
     Integer selectCartById(Integer id);
 }
