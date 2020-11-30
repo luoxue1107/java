@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c540e16-16a7-485f-be55-555323617baa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/4/0420c902b27d76685a35d7fe996849bdf5263f7b" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/0/4/0420c902b27d76685a35d7fe996849bdf5263f7b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/1/6/160e38b484f07855b013d3349bb8cbebb0a6a1eb" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/1/6/160e38b484f07855b013d3349bb8cbebb0a6a1eb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/2/524fdfe88301ad6ab8f4c3e9b0411e92d87e450a" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/2/524fdfe88301ad6ab8f4c3e9b0411e92d87e450a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/d/5ddbd23878a5c7cbf9af0e05fd8e7eec3908b972" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/5/d/5ddbd23878a5c7cbf9af0e05fd8e7eec3908b972" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/8/a/8a5a5e3f84a52fa4e14220840dc21e2d0cee449e" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/8/a/8a5a5e3f84a52fa4e14220840dc21e2d0cee449e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/1/d1028231cad9f1c3ac68ad1750662f03253487b8" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/1/d1028231cad9f1c3ac68ad1750662f03253487b8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/8/d83ceda5626f5cbeff89b09f6e7f5513ad81be7b" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/d/8/d83ceda5626f5cbeff89b09f6e7f5513ad81be7b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/e/e/eecdede5fc3884f5a953f78c0f74bed3e63df5f8" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/e/e/eecdede5fc3884f5a953f78c0f74bed3e63df5f8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cot/practice/src/main/java/cn/kgc/tangcco/util/jdbc/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cot/practice/src/main/java/cn/kgc/tangcco/util/jdbc/JDBCUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/JavaSE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nov/Spring_MVC/Spring_MVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Nov/Spring_MVC/Spring_MVC.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +38,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Nov" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -63,21 +56,22 @@
       <option name="presentableId" value="Default" />
       <updated>1604311922751</updated>
       <workItem from="1604311926554" duration="230000" />
+      <workItem from="1606715179442" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1604312023647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604312023647" />
-    <state x="542" y="167" key="FileChooserDialogImpl" timestamp="1604312145667">
+    <state x="542" y="167" key="FileChooserDialogImpl" timestamp="1606715220419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="542" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604312145667" />
+    <state x="542" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606715220419" />
     <state x="3" y="0" key="new project wizard" timestamp="1604312154378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
