@@ -1,0 +1,17 @@
+server:
+  port: 80
+
+#person:
+#  name: luo
+#  age: 18
+#  birthday: 1998/11/07
+#  lists:
+#    - li
+#    - qing
+#    - hua
+#  maps: {k1: v1 , k2: v2 , k3: v3}
+#  dog:
+#   name: mm
+#   age: 12
+
+
